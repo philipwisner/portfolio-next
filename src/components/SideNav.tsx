@@ -3,9 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 
 export default function SideNav() {
-
   const pathname = usePathname();
-  console.log('pathname', pathname);
 
   const isActive = (path: string) => {
     return path === pathname;
