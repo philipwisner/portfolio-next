@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import Header from "@/components/Header";
 
 
 export const metadata: Metadata = {
@@ -10,15 +11,15 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div className="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
-      <h1>&lt;About&gt;</h1>
+      <Header name="About" />
       <div className="about">
-        {/* <Image
-            src="../images/headshot.jpg"
-            alt="me"
-            className="img-responsive center-block"
-            width={100}
-            height={100}
-          /> */}
+        <Image
+          src="/headshot.jpg"
+          alt="me"
+          className="img-responsive center-block"
+          width={500}
+          height={500}
+        />
         <h2>Profile</h2>
         <p>
           I am a Full Stack JavaScript Developer who loves learning new
