@@ -1,16 +1,14 @@
-import Image from "next/image";
-import type { Metadata } from "next";
-import Header from "@/components/Header";
-
+import Image from 'next/image';
+import type { Metadata } from 'next';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
-  title: "Philip Wisner - About",
+  title: 'Philip Wisner - About',
 };
-
 
 export default function About() {
   return (
-    <div className="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
+    <div className="content px-10">
       <Header name="About" />
       <div className="about">
         <Image
@@ -25,8 +23,7 @@ export default function About() {
           I am a Full Stack JavaScript Developer who loves learning new
           technologies and frameworks. I also love design, UX/UI and creating
           beautiful and functional web applications. To see a list of my current
-          skills and what I’m working on click
-          <a href="skills.html">here</a>.
+          skills and what I’m working on click <a href="skills.html">here</a>.
         </p>
         <h2>From</h2>
         <p>
@@ -49,8 +46,7 @@ export default function About() {
           AT&amp;T as an Application Sales Consultant for Corporate Business
           Solutions. I was in charge of supporting a sales team to help sell,
           configure and implement a wide range of technical solutions to suit
-          their businesses. Check out my resume
-          <a href="resume.html">here</a>.
+          their businesses. Check out my resume <a href="resume.html">here</a>.
         </p>
         <h2>Bootcamp</h2>
         <p>
@@ -59,7 +55,7 @@ export default function About() {
           of web development using JavaScript. We built full stack apps using
           the MEAN stack (MongoDB, Express, Angular 2+ &amp; Node.js). I
           completed three applications during the nine-week program: a game, a
-          back-end driven app and a full stack app using Angular. Check them out
+          back-end driven app and a full stack app using Angular. Check them out{' '}
           <a href="apps.html">here</a>.
         </p>
         <h2>Higher Education</h2>
@@ -85,7 +81,7 @@ export default function About() {
           As of today I have currently traveled to 50+ countries. With my most
           recent travels being 380 days spent traveling Latin America. To see a
           map of all the countries I’ve visited click here. To see pictures from
-          my trips click here. To read about my travels click
+          my trips click here. To read about my travels click{' '}
           <a href="travel.html">here</a>.
         </p>
         <h2>About this site</h2>
@@ -106,36 +102,36 @@ export default function About() {
           >
             HevnGrafix
           </a>
-          ,
+          ,{' '}
           <a
             href="https://www.flaticon.com/authors/smashicons"
             title="Smashicons"
           >
             Smashicons
           </a>
-          ,{" "}
+          ,{' '}
           <a href="http://www.freepik.com" title="Freepik">
             Freepik
           </a>
-          ,
+          ,{' '}
           <a
             href="https://www.flaticon.com/authors/dinosoftlabs"
             title="DinosoftLabs"
           >
             DinosoftLabs
-          </a>
-          &amp;
+          </a>{' '}
+          &amp;{' '}
           <a
             href="https://www.flaticon.com/authors/swifticons"
             title="Swifticons"
           >
             Swifticons
-          </a>
-          from
+          </a>{' '}
+          from{' '}
           <a href="https://www.flaticon.com/" title="Flaticon">
             www.flaticon.com
-          </a>
-          is licensed by
+          </a>{' '}
+          is licensed by{' '}
           <a
             href="http://creativecommons.org/licenses/by/3.0/"
             title="Creative Commons BY 3.0"

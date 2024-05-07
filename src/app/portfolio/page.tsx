@@ -1,9 +1,9 @@
-import Image from "next/image";
-import type { Metadata } from "next";
-import Header from "@/components/Header";
+import Image from 'next/image';
+import type { Metadata } from 'next';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
-  title: "Philip Wisner - Portfolio",
+  title: 'Philip Wisner - Portfolio',
 };
 
 export default function Portfolio() {

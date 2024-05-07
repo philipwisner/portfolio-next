@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import SideNav from "@/components/SideNav";
-import { heebo, openSans } from "@/fonts/fonts";
+import type { Metadata } from 'next';
+import './globals.css';
+import SideNav from '@/components/SideNav';
+import { heebo, openSans } from '@/fonts/fonts';
 
 export const metadata: Metadata = {
-  title: "Philip Wisner | Web Developer",
-  description: "I'm a JavaScript Full Stack Web Developer & Designer. This website serves as my portfolio and hub for all the projects I am working on.",
+  title: 'Philip Wisner | Web Developer',
+  description:
+    "I'm a JavaScript Full Stack Web Developer & Designer. This website serves as my portfolio and hub for all the projects I am working on.",
 };
-
 
 export default function RootLayout({
   children,
@@ -35,9 +35,11 @@ export default function RootLayout({
         />
       </head>
       <body className={`${heebo.variable} ${openSans.variable}`}>
-        <SideNav />
-        {children}
+        <div className="grid md:grid-cols-10 gap-8 p-0 m-0">
+          <SideNav />
+          <div className="grid md:col-span-7 py-8">{children}</div>
+        </div>
       </body>
-    </html >
+    </html>
   );
 }

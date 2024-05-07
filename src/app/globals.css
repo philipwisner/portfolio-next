@@ -15,12 +15,11 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+a {
+  text-decoration: none !important;
 }
 
 @layer utilities {
@@ -1844,16 +1843,14 @@ body {
   outline: 0;
 }
 
-.side-bar {
-  margin-top: 5vh;
-}
 
 .side-bar .name {
   -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  -ms-grid-row-align: auto;
+   align-self: auto;
   text-align: center;
   font-family: var(--font-heebo), sans-serif;
+  margin-top: 5vh;
 }
 
 .side-bar .name h1 {
@@ -1958,6 +1955,11 @@ body {
   font-weight: 700;
 }
 
+.side-bar .list :hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .side-bar .about-contact {
   margin-top: 6vh;
   margin-bottom: 5vh;
@@ -2014,26 +2016,21 @@ body {
 .social li {
   display: inline-block;
   margin: 0 20px 0 20px;
+  cursor: pointer;
 }
 
 .social a {
   color: black;
 }
 
-.social :hover {
-  color: #1845AD;
-}
 
-.content {
-  margin-top: 5vh;
-}
 
 .content h1 {
   font-family: var(--font-heebo), sans-serif;
   color: #1845AD;
   font-size: 3.5em;
   margin-bottom: 5vh;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 
