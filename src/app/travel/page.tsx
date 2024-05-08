@@ -313,7 +313,7 @@ export default function Travel() {
   // }, [])
 
   return (
-    <div className="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
+    <div className="container">
       <Header name="Travel" />
       <Script
         src="https://www.amcharts.com/lib/3/ammap.js"

@@ -58,10 +58,10 @@ export default function SideNav() {
   ];
 
   return (
-    <div className="md:col-span-3 md:pt-0 py-8 px-4 sticky top-0 h-svh side-bar overflow-scroll">
-      <div className="name">
-        <h1>&lt;philip.wisner&gt;</h1>
-        <h2>web developer</h2>
+    <aside className="md:col-span-3 pt-16 pd-2 px-4 sticky top-0 h-svh side-bar overflow-scroll">
+      <div>
+        <p className="name">&lt;philip.wisner&gt;</p>
+        <p className="title">web developer</p>
       </div>
       <ul className="list">
         {paths.map((path) => {
@@ -107,6 +107,6 @@ export default function SideNav() {
           </Link>
         </li>
       </ul>
-    </div>
+    </aside>
   );
 }

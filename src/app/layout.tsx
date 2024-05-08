@@ -18,14 +18,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        />
-        <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
@@ -37,7 +29,7 @@ export default function RootLayout({
       <body className={`${heebo.variable} ${openSans.variable}`}>
         <div className="grid md:grid-cols-10 gap-8 p-0 m-0">
           <SideNav />
-          <div className="grid md:col-span-7 py-8">{children}</div>
+          <div className="grid md:col-span-7 pt-16 pb-32">{children}</div>
         </div>
       </body>
     </html>

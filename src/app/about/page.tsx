@@ -8,32 +8,38 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="content px-10">
+    <div className="container">
       <Header name="About" />
-      <div className="about">
-        <Image
-          src="/headshot.jpg"
-          alt="me"
-          className="img-responsive center-block"
-          width={500}
-          height={500}
-        />
-        <h2>Profile</h2>
-        <p>
+      <div>
+        <div className="flex justify-center items-center">
+          <Image
+            src="/headshot.jpg"
+            alt="me"
+            className="mb-[5vh]"
+            width={500}
+            height={500}
+          />
+        </div>
+        <h3>Profile</h3>
+        <p className="mb-8">
           I am a Full Stack JavaScript Developer who loves learning new
           technologies and frameworks. I also love design, UX/UI and creating
           beautiful and functional web applications. To see a list of my current
-          skills and what I’m working on click <a href="skills.html">here</a>.
+          skills and what I’m working on click{' '}
+          <a href="skills.html" className="inline-link">
+            here
+          </a>
+          .
         </p>
-        <h2>From</h2>
-        <p>
+        <h3>From</h3>
+        <p className="mb-8">
           I was born and raised in the suburbs of Philadelphia. My maternal
           family is Italian which entitles me to have dual citizenship with
           Italy. Soon I will be authorized to work in the European Union along
           with the US.
         </p>
-        <h2>Work Experience</h2>
-        <p>
+        <h3>Work Experience</h3>
+        <p className="mb-8">
           I am currently employed as a Senior Front End Developer at Asset Map.
           Where I also work on the creative and UI/UX aspects of our software. I
           was previously employed as a UI Developer for the Dice Group at Thomas
@@ -46,20 +52,27 @@ export default function About() {
           AT&amp;T as an Application Sales Consultant for Corporate Business
           Solutions. I was in charge of supporting a sales team to help sell,
           configure and implement a wide range of technical solutions to suit
-          their businesses. Check out my resume <a href="resume.html">here</a>.
+          their businesses. Check out my resume{' '}
+          <a href="resume.html" className="inline-link">
+            here
+          </a>
+          .
         </p>
-        <h2>Bootcamp</h2>
-        <p>
+        <h3>Bootcamp</h3>
+        <p className="mb-8">
           I graduated from Ironhack’s Full Stack Web Development Bootcamp on
           October 2017 in Barcelona. At the bootcamp I learned the fundamentals
           of web development using JavaScript. We built full stack apps using
           the MEAN stack (MongoDB, Express, Angular 2+ &amp; Node.js). I
           completed three applications during the nine-week program: a game, a
           back-end driven app and a full stack app using Angular. Check them out{' '}
-          <a href="apps.html">here</a>.
+          <a href="apps.html" className="inline-link">
+            here
+          </a>
+          .
         </p>
-        <h2>Higher Education</h2>
-        <p>
+        <h3>Higher Education</h3>
+        <p className="mb-8">
           I attended Penn State from 2009-2013 obtaining degrees in Marketing,
           Spanish, Supply Chain Management, IT and International Business. While
           attending PSU I had the amazing opportunity to study abroad not once
@@ -76,16 +89,19 @@ export default function About() {
           them improve their English and integrate into American university
           culture.
         </p>
-        <h2>Travel</h2>
-        <p>
+        <h3>Travel</h3>
+        <p className="mb-8">
           As of today I have currently traveled to 50+ countries. With my most
           recent travels being 380 days spent traveling Latin America. To see a
           map of all the countries I’ve visited click here. To see pictures from
           my trips click here. To read about my travels click{' '}
-          <a href="travel.html">here</a>.
+          <a href="travel.html" className="inline-link">
+            here
+          </a>
+          .
         </p>
-        <h2>About this site</h2>
-        <p>
+        <h3>About this site</h3>
+        <p className="mb-8">
           This site is made from scratch, 100% written and designed by me. I am
           using Bootstrap to help with the responsive design, but I have also
           written custom media queries to do additional work. All of my CSS is
@@ -99,6 +115,7 @@ export default function About() {
           <a
             href="https://www.flaticon.com/authors/hevngrafix"
             title="HevnGrafix"
+            className="inline-link"
           >
             HevnGrafix
           </a>
@@ -106,17 +123,23 @@ export default function About() {
           <a
             href="https://www.flaticon.com/authors/smashicons"
             title="Smashicons"
+            className="inline-link"
           >
             Smashicons
           </a>
           ,{' '}
-          <a href="http://www.freepik.com" title="Freepik">
+          <a
+            href="http://www.freepik.com"
+            title="Freepik"
+            className="inline-link"
+          >
             Freepik
           </a>
           ,{' '}
           <a
             href="https://www.flaticon.com/authors/dinosoftlabs"
             title="DinosoftLabs"
+            className="inline-link"
           >
             DinosoftLabs
           </a>{' '}
@@ -124,11 +147,16 @@ export default function About() {
           <a
             href="https://www.flaticon.com/authors/swifticons"
             title="Swifticons"
+            className="inline-link"
           >
             Swifticons
           </a>{' '}
           from{' '}
-          <a href="https://www.flaticon.com/" title="Flaticon">
+          <a
+            href="https://www.flaticon.com/"
+            title="Flaticon"
+            className="inline-link"
+          >
             www.flaticon.com
           </a>{' '}
           is licensed by{' '}
@@ -136,6 +164,7 @@ export default function About() {
             href="http://creativecommons.org/licenses/by/3.0/"
             title="Creative Commons BY 3.0"
             target="_blank"
+            className="inline-link"
           >
             CC 3.0 BY
           </a>

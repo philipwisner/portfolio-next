@@ -8,22 +8,32 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <div className="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
+    <div>
       <Header name="Contact" />
-      <div className="contact-info">
-        <h2>email</h2>
-        <p>
-          <a href="mailto:contact@philipwisner.com">contact@philipwisner.com</a>
+      <div className="mt-[8vh]">
+        <h3>email</h3>
+        <p className="mb-[5vh]">
+          <a href="mailto:contact@philipwisner.com" className="secondary-link">
+            contact@philipwisner.com
+          </a>
         </p>
-        <h2>linkedin</h2>
-        <p>
-          <a href="https://www.linkedin.com/in/philipwisner" target="_blank">
+        <h3>linkedin</h3>
+        <p className="mb-[5vh]">
+          <a
+            href="https://www.linkedin.com/in/philipwisner"
+            target="_blank"
+            className="secondary-link"
+          >
             linkedin.com/in/philipwisner
           </a>
         </p>
-        <h2>github</h2>
-        <p>
-          <a href="https://github.com/philipwisner" target="_blank">
+        <h3>github</h3>
+        <p className="mb-[5vh]">
+          <a
+            href="https://github.com/philipwisner"
+            target="_blank"
+            className="secondary-link"
+          >
             github.com/philipwisner
           </a>
         </p>

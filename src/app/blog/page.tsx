@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Blog() {
   return (
-    <div className="col-xs-12 col-sm-8 col-md-8 col-lg-9 content" id="content">
+    <div className="container">
       <Header name="Blog" />
     </div>
   );
