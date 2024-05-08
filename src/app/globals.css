@@ -20,7 +20,7 @@
   }
   .container {
     @apply px-10;
-    max-width: 1000;
+    max-width: 1100px;
   }
   .side-nav {
     @apply md:col-span-3 pt-16 pb-2 px-4 sticky top-0 h-svh overflow-scroll;
@@ -407,60 +407,10 @@ a {
   margin-bottom: 8vh;
 }
 
-@media screen and (min-width: 0px) and (max-width: 765px) {
-  .photography img {
-    margin-top: -3vh;
-    max-width: 150px;
-  }
-}
-
-@media screen and (min-width: 766px) and (max-width: 4000px) {
-  .photography a img {
-    margin-top: 2vh;
-    max-width: 250px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .flex .portfolio-item {
     width: 100%;
   }
-}
-
-.photography {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.photography .insta p {
-  text-align: center;
-  font-size: 1.5em;
-  margin: 3vh 0 5vh 0;
-}
-
-@media all and (max-width: 640px) {
-  .photography .insta p {
-    font-size: 1em;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .photography .insta p {
-    font-size: 1.5em;
-  }
-}
-
-@media all and (max-width: 800px) {
-  .photography .insta p {
-    font-size: 1.17857em;
-  }
-}
-
-.photography .insta a {
-  text-align: center;
-  margin: 0 auto;
-  color: #1845ad;
-  font-weight: bold;
 }
 
 .blog {
