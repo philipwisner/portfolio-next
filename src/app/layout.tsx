@@ -27,9 +27,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${heebo.variable} ${openSans.variable}`}>
-        <div className="grid md:grid-cols-10 gap-8 p-0 m-0">
+        <div className="parent-grid">
           <SideNav />
-          <div className="grid md:col-span-7 pt-16 pb-32">{children}</div>
+          <div className="outlet-grid">{children}</div>
         </div>
       </body>
     </html>

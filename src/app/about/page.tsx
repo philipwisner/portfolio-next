@@ -11,9 +11,9 @@ export default function About() {
     <div className="container">
       <Header name="About" />
       <div>
-        <div className="flex justify-center items-center">
+        <div className="flex-center">
           <Image
-            src="/headshot.jpg"
+            src="/images/headshot.jpg"
             alt="me"
             className="mb-[5vh]"
             width={500}
@@ -21,7 +21,7 @@ export default function About() {
           />
         </div>
         <h3>Profile</h3>
-        <p className="mb-8">
+        <p className="paragraph-chunk">
           I am a Full Stack JavaScript Developer who loves learning new
           technologies and frameworks. I also love design, UX/UI and creating
           beautiful and functional web applications. To see a list of my current
@@ -32,14 +32,14 @@ export default function About() {
           .
         </p>
         <h3>From</h3>
-        <p className="mb-8">
+        <p className="paragraph-chunk">
           I was born and raised in the suburbs of Philadelphia. My maternal
           family is Italian which entitles me to have dual citizenship with
           Italy. Soon I will be authorized to work in the European Union along
           with the US.
         </p>
         <h3>Work Experience</h3>
-        <p className="mb-8">
+        <p className="paragraph-chunk">
           I am currently employed as a Senior Front End Developer at Asset Map.
           Where I also work on the creative and UI/UX aspects of our software. I
           was previously employed as a UI Developer for the Dice Group at Thomas
@@ -59,7 +59,7 @@ export default function About() {
           .
         </p>
         <h3>Bootcamp</h3>
-        <p className="mb-8">
+        <p className="paragraph-chunk">
           I graduated from Ironhack’s Full Stack Web Development Bootcamp on
           October 2017 in Barcelona. At the bootcamp I learned the fundamentals
           of web development using JavaScript. We built full stack apps using
@@ -72,7 +72,7 @@ export default function About() {
           .
         </p>
         <h3>Higher Education</h3>
-        <p className="mb-8">
+        <p className="paragraph-chunk">
           I attended Penn State from 2009-2013 obtaining degrees in Marketing,
           Spanish, Supply Chain Management, IT and International Business. While
           attending PSU I had the amazing opportunity to study abroad not once
@@ -90,7 +90,7 @@ export default function About() {
           culture.
         </p>
         <h3>Travel</h3>
-        <p className="mb-8">
+        <p className="paragraph-chunk">
           As of today I have currently traveled to 50+ countries. With my most
           recent travels being 380 days spent traveling Latin America. To see a
           map of all the countries I’ve visited click here. To see pictures from
@@ -101,7 +101,7 @@ export default function About() {
           .
         </p>
         <h3>About this site</h3>
-        <p className="mb-8">
+        <p className="paragraph-chunk">
           This site is made from scratch, 100% written and designed by me. I am
           using Bootstrap to help with the responsive design, but I have also
           written custom media queries to do additional work. All of my CSS is
@@ -110,7 +110,7 @@ export default function About() {
           site is a work in progress, with new content and bugs being fixed
           everyday. So feel free to check back often.
         </p>
-        <div className="credit">
+        <div className="mt-16">
           Icons on this website made by myself and help from
           <a
             href="https://www.flaticon.com/authors/hevngrafix"

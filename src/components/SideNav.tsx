@@ -58,18 +58,18 @@ export default function SideNav() {
   ];
 
   return (
-    <aside className="md:col-span-3 pt-16 pd-2 px-4 sticky top-0 h-svh side-bar overflow-scroll">
+    <aside className="side-nav">
       <div>
         <p className="name">&lt;philip.wisner&gt;</p>
         <p className="title">web developer</p>
       </div>
-      <ul className="list">
+      <ul className="list-container">
         {paths.map((path) => {
           return (
-            <li key={path.value} className="cursor-pointer">
+            <li key={path.value} className="side-list-item">
               <Link
                 href={path.path}
-                className={`${isActive(path.path) ? 'active' : ''}`}
+                className={`side-link ${isActive(path.path) ? 'active' : ''}`}
               >
                 {isActive(path.path) ? `{ ${path.name} }` : path.name}
               </Link>
@@ -77,31 +77,39 @@ export default function SideNav() {
           );
         })}
       </ul>
-      <ul className="social">
+      <ul className="horizontal-list">
         <li>
-          <a href="https://github.com/philipwisner" target="_blank">
-            <i className="fa fa-github fa-2x" aria-hidden="true"></i>
+          <a
+            href="https://github.com/philipwisner"
+            target="_blank"
+            className="side-link"
+          >
+            <i className="fa fa-github fa-2x " aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/philipwisner" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/philipwisner"
+            target="_blank"
+            className="side-link"
+          >
             <i className="fa fa-linkedin fa-2x" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
-      <ul className="about-contact">
-        <li>
+      <ul className="horizontal-list">
+        <li className="bottom-list-item">
           <Link
             href="/about"
-            className={`${isActive('/about') ? 'active' : ''}`}
+            className={`bottom-link ${isActive('/about') ? 'active-black' : ''}`}
           >
             about
           </Link>
         </li>
-        <li>
+        <li className="bottom-list-item">
           <Link
             href="/contact"
-            className={isActive('/contact') ? 'active' : ''}
+            className={`bottom-link ${isActive('/contact') ? 'active-black' : ''}`}
           >
             contact
           </Link>

@@ -10,15 +10,15 @@ export default function Contact() {
   return (
     <div>
       <Header name="Contact" />
-      <div className="mt-[8vh]">
+      <div>
         <h3>email</h3>
-        <p className="mb-[5vh]">
+        <p className="contact-chunk">
           <a href="mailto:contact@philipwisner.com" className="secondary-link">
             contact@philipwisner.com
           </a>
         </p>
         <h3>linkedin</h3>
-        <p className="mb-[5vh]">
+        <p className="contact-chunk">
           <a
             href="https://www.linkedin.com/in/philipwisner"
             target="_blank"
@@ -28,7 +28,7 @@ export default function Contact() {
           </a>
         </p>
         <h3>github</h3>
-        <p className="mb-[5vh]">
+        <p className="contact-chunk">
           <a
             href="https://github.com/philipwisner"
             target="_blank"
