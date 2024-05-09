@@ -364,28 +364,12 @@ export default function Travel() {
         src="https://www.amcharts.com/lib/3/themes/dark.js"
         type="text/javascript"
       ></Script>
-      <div
-        id="mapdiv"
-        style={{ width: '1000px', height: '450px' }}
-        className="img-responsive center-block"
-      ></div>
-      <div
-        className="img-responsive center-block"
-        style={{
-          width: '1000px',
-          fontSize: '70%',
-          padding: '5px 0',
-          textAlign: 'center',
-          backgroundColor: '#ffffff',
-          marginTop: '1px',
-          color: '#d1d1d1',
-        }}
-      ></div>
+      <div id="mapdiv" className="w-full h-[400px]"></div>
       <h3 className="text-center">
         <span className="font-bold text-cobalt-800">{countriesCount}</span>{' '}
         countries visited so far
       </h3>
-      <div className="flex gap-[5%] mt-10">
+      <div className="flex gap-[5%] justify-center mt-10">
         <div className="w-[20%] min-w-[200px]">
           <CountryGroup heading={'North America'} countries={northAmerica} />
         </div>
@@ -395,7 +379,7 @@ export default function Travel() {
         <div className="w-[20%] min-w-[200px]">
           <CountryGroup heading={'South America'} countries={southAmerica} />
         </div>
-        <div className="flex flex-col w-[20%] min-w-[200px]">
+        <div className="w-[20%] min-w-[200px]">
           <CountryGroup heading={'Asia'} countries={asia} />
           <CountryGroup heading={'Africa'} countries={africa} />
           <CountryGroup heading={'Oceania'} countries={oceania} />
