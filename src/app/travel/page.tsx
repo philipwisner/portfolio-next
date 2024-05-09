@@ -36,6 +36,11 @@ export default function Travel() {
   const asia = filterByContinent('Asia');
   const oceania = filterByContinent('Oceania');
 
+  const visitedCountries = countries.filter((c) => c.visited);
+  const subtractCountries = 3;
+  const visitedCountriesCount = visitedCountries.length;
+  const countriesCount = visitedCountriesCount - subtractCountries;
+
   useEffect(() => {
     document.title = `Philip Wisner - Travel`;
   }, []);
@@ -376,18 +381,25 @@ export default function Travel() {
           color: '#d1d1d1',
         }}
       ></div>
-      <div className="country-number">
-        <h2>
-          <span>61</span> countries visited so far
-        </h2>
-      </div>
-      <div className="flex gap-10 mt-10">
-        <CountryGroup heading={'North America'} countries={northAmerica} />
-        <CountryGroup heading={'South America'} countries={southAmerica} />
-        <CountryGroup heading={'Europe'} countries={europe} />
-        <CountryGroup heading={'Asia'} countries={asia} />
-        <CountryGroup heading={'Africa'} countries={africa} />
-        <CountryGroup heading={'Oceania'} countries={oceania} />
+      <h3 className="text-center">
+        <span className="font-bold text-cobalt-800">{countriesCount}</span>{' '}
+        countries visited so far
+      </h3>
+      <div className="flex gap-[5%] mt-10">
+        <div className="w-[20%] min-w-[200px]">
+          <CountryGroup heading={'North America'} countries={northAmerica} />
+        </div>
+        <div className="w-[20%] min-w-[200px]">
+          <CountryGroup heading={'Europe'} countries={europe} />
+        </div>
+        <div className="w-[20%] min-w-[200px]">
+          <CountryGroup heading={'South America'} countries={southAmerica} />
+        </div>
+        <div className="flex flex-col w-[20%] min-w-[200px]">
+          <CountryGroup heading={'Asia'} countries={asia} />
+          <CountryGroup heading={'Africa'} countries={africa} />
+          <CountryGroup heading={'Oceania'} countries={oceania} />
+        </div>
       </div>
     </div>
   );
