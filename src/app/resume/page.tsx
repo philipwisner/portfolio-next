@@ -12,7 +12,7 @@ export default function Resume() {
       <Header name="Resume" />
       <div className="flex-center">
         <Image
-          src="images/Philip Wisner - Resume.svg"
+          src="documents/Philip Wisner - Resume.svg"
           alt="me"
           className="mb-5"
           width={1000}

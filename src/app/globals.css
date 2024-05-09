@@ -74,6 +74,15 @@
   .big-link {
     @apply text-2xl text-cobalt-800 hover:text-cobalt-700 text-center block;
   }
+  .skills-container {
+    @apply flex justify-center items-end mb-20 mt-8 gap-10;
+  }
+  .skill-container {
+    @apply flex flex-col justify-center items-center;
+    p {
+      @apply mt-3;
+    }
+  }
 }
 
 h1 {
@@ -97,231 +106,7 @@ a {
   text-decoration: none !important;
 }
 
-@media screen and (min-width: 0px) and (max-width: 765px) {
-  img {
-    margin-top: 3vh;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 765px) {
-  .skills img {
-    max-width: 50px;
-    height: auto;
-  }
-  .skills .redis,
-  .skills .sass,
-  .skills .node,
-  .skills .react,
-  .skills .vue,
-  .skills .python,
-  .skills .ruby,
-  .skills .java,
-  .skills .aws,
-  .skills .heroku,
-  .skills .illustrator,
-  .skills .photoshop,
-  .skills .ionic,
-  .skills .lightroom,
-  .skills .indesign,
-  .skills .xd,
-  .skills .webpack,
-  .skills .d3,
-  .skills .figma,
-  .skills .net,
-  .skills .portuguese,
-  .skills .swift {
-    width: 10rem;
-  }
-  .skills .express {
-    width: 4.5rem;
-  }
-  .skills .redux,
-  .skills .csharp,
-  .skills .backbone,
-  .skills .graphQL {
-    width: 9.5rem;
-  }
-  .skills .go,
-  .skills .django {
-    width: 4rem;
-  }
-  .skills .spanish {
-    width: 8.2rem;
-  }
-  .skills .italian {
-    width: 3.5rem;
-  }
-  .skills .php,
-  .skills .polymer,
-  .skills .ember {
-    width: 10rem;
-    padding-bottom: 10px;
-  }
-  .skills .firebase {
-    width: 4rem;
-  }
-  .skills .azure {
-    width: 10rem;
-  }
-}
-
-@media screen and (min-width: 766px) and (max-width: 25000px) {
-  .skills img {
-    max-width: 100px;
-    height: auto;
-  }
-  .skills .sass,
-  .skills .node,
-  .skills .react,
-  .skills .vue,
-  .skills .python,
-  .skills .ruby,
-  .skills .aws,
-  .skills .heroku,
-  .skills .illustrator,
-  .skills .photoshop,
-  .skills .ionic,
-  .skills .lightroom,
-  .skills .indesign,
-  .skills .xd,
-  .skills .webpack,
-  .skills .figma,
-  .skills .net,
-  .skills .portuguese {
-    width: 10rem;
-  }
-  .skills .express {
-    width: 8.5rem;
-  }
-  .skills .polymer {
-    width: 10rem;
-    margin-bottom: 30px;
-  }
-  .skills .redux,
-  .skills .csharp,
-  .skills .backbone,
-  .skills .graphQL,
-  .skills .d3,
-  .skills .electron {
-    width: 9.5rem;
-  }
-  .skills .go {
-    width: 7rem;
-  }
-  .skills .spanish,
-  .skills .django {
-    width: 8.2rem;
-  }
-  .skills .italian {
-    width: 6rem;
-  }
-  .skills .firebase {
-    width: 7.5rem;
-  }
-  .skills .php {
-    width: 10rem;
-    padding-bottom: 15px;
-  }
-  .skills .ember {
-    width: 10rem;
-    margin-bottom: 40px;
-  }
-  .skills .azure,
-  .skills .java {
-    width: 10rem;
-    margin-bottom: 10px;
-  }
-  .skills .redis {
-    width: 10rem;
-    margin-bottom: 20px;
-  }
-  .skills .svelte {
-    width: 10rem;
-  }
-  .skills .postgres {
-    width: 9.5rem;
-  }
-  .skills .flask {
-    width: 11rem;
-  }
-  .skills .vite {
-    width: 9rem;
-  }
-  .skills .styled {
-    width: 12rem;
-  }
-  .skills .swift {
-    width: 11rem;
-    margin-bottom: 20px;
-  }
-}
-
-.skills {
-  max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: 10vh;
-}
-
-.skills h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 3vh;
-  font-size: 2.2em;
-}
-
-@media all and (max-width: 640px) {
-  .skills h2 {
-    font-size: 1.8em;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .skills h2 {
-    font-size: 2.2em;
-  }
-}
-
-@media all and (max-width: 927px) {
-  .skills h2 {
-    font-size: 2.142em;
-  }
-}
-
-@media all and (max-width: 711px) {
-  .skills h2 {
-    font-size: 1.91142em;
-  }
-}
-
-.skills p {
-  margin-top: 13px;
-  font-size: 1.2em;
-}
-
-@media all and (max-width: 640px) {
-  .skills p {
-    font-size: 0.9em;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .skills p {
-    font-size: 1.2em;
-  }
-}
-
-@media all and (max-width: 700px) {
-  .skills p {
-    font-size: 0.95391em;
-  }
-}
-
 .skills ul {
-  list-style-type: none;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0;
   margin-bottom: 5vh;
 }
 
@@ -330,11 +115,6 @@ a {
   text-align: center;
   padding-left: 0;
   margin: 15px 25px;
-}
-
-.skills img {
-  margin-bottom: 1vh;
-  font-size: 16px;
 }
 
 #mapdiv {

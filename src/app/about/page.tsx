@@ -13,7 +13,7 @@ export default function About() {
       <div>
         <div className="flex-center">
           <Image
-            src="/images/headshot.jpg"
+            src="/pictures/headshot.jpg"
             alt="me"
             className="mb-[5vh]"
             width={500}
