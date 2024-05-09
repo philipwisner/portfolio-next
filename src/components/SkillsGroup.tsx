@@ -22,7 +22,6 @@ function SkillsGroup(props: Props) {
               <Image
                 src={skill.image}
                 alt={skill.value}
-                className="img-responsive center-block"
                 width={skill.width ? skill.width : 80}
                 height={skill.width ? skill.width : 80}
               />

@@ -83,6 +83,12 @@
       @apply mt-3;
     }
   }
+  .cards-container {
+    @apply flex justify-start items-end mb-20 mt-8 gap-[5%];
+  }
+  .card-container {
+    @apply flex flex-col justify-center items-center  w-[20%];
+  }
 }
 
 h1 {
@@ -556,18 +562,6 @@ a {
 
 #upBtn:hover {
   background-color: #1d53d0;
-}
-
-@media screen and (min-width: 0px) and (max-width: 765px) {
-  .portfolio .category h2 {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 766px) and (max-width: 5000px) {
-  .portfolio .category h2 {
-    margin-bottom: 3vh;
-  }
 }
 
 .portfolio {
@@ -1273,168 +1267,6 @@ a {
   max-width: 65%;
   padding: 0px 10px 20px 10px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 0px) and (max-width: 765px) {
-  .websites .portfolio-item .google-logo {
-    padding: 35px;
-    margin: 0 auto;
-    margin-top: -10px;
-    margin-bottom: -10px;
-  }
-}
-
-@media screen and (min-width: 766px) and (max-width: 5000px) {
-  .websites .portfolio-item .google-logo {
-    padding: 35px;
-    margin: 0 auto;
-    margin-top: -20px;
-  }
-}
-
-.websites {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-  margin-top: -2vh;
-  margin-bottom: 8vh;
-}
-
-.websites .category h2 {
-  display: inline-block;
-  font-size: 2.8em;
-  text-indent: 12px;
-  font-weight: 600;
-  margin-bottom: 4vh;
-}
-
-@media all and (max-width: 640px) {
-  .websites .category h2 {
-    font-size: 1.8em;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .websites .category h2 {
-    font-size: 2.8em;
-  }
-}
-
-@media all and (max-width: 986px) {
-  .websites .category h2 {
-    font-size: 2.48121em;
-  }
-}
-
-@media all and (max-width: 787px) {
-  .websites .category h2 {
-    font-size: 2.11445em;
-  }
-}
-
-.websites .category a {
-  display: inline-block;
-  margin-left: 10px;
-  color: #95989a;
-  font-weight: 600;
-}
-
-.websites .portfolio-item {
-  margin-bottom: 5vh;
-}
-
-.websites .portfolio-item h4 {
-  text-align: center;
-}
-
-.websites .portfolio-item h4 a {
-  color: black;
-  font-weight: 600;
-  font-size: 1.2em;
-}
-
-.websites .portfolio-item h4 :hover {
-  text-decoration: none;
-  color: #95989a;
-}
-
-.websites .portfolio-item img {
-  padding: 5px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-.websites .portfolio-item .card-text {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 1.1em;
-}
-
-@media all and (max-width: 340px) {
-  .websites .portfolio-item .card-text {
-    font-size: 0.9em;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .websites .portfolio-item .card-text {
-    font-size: 1.1em;
-  }
-}
-
-@media all and (max-width: 655px) {
-  .websites .portfolio-item .card-text {
-    font-size: 1.31868em;
-  }
-}
-
-@media all and (max-width: 407px) {
-  .websites .portfolio-item .card-text {
-    font-size: 1.02249em;
-  }
-}
-
-.websites .portfolio-item .ifttt {
-  margin-top: -20px;
-}
-
-.websites .portfolio-item .neat {
-  max-width: 48%;
-  margin-top: -20px;
-}
-
-.websites .portfolio-item .bem {
-  max-width: 48%;
-}
-
-.websites .portfolio-item .spotify {
-  padding: 18px;
-}
-
-.websites .portfolio-item .instagram {
-  padding: 20px;
-}
-
-.websites .portfolio-item .pitchfork {
-  padding: 18px;
-  max-width: 90%;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-.websites .portfolio-item .bitly {
-  max-width: 80%;
-  padding: 15px;
-  margin-bottom: -5px;
-}
-
-.websites .portfolio-item p a {
-  color: #1845ad;
-}
-
-.websites .portfolio-item p a:hover {
-  font-weight: 700;
-  text-decoration: none;
 }
 
 * {

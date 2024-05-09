@@ -1,0 +1,332 @@
+* {
+	font-family: 'Segoe UI';
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Anonymous Pro', monospace;
+	font-family: 'Artifika', serif;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+	.card-table {
+		width: 300px;
+		margin: -2px;
+	}
+	.card {
+		width: 295px;
+	}
+	.card h4 {
+		margin-left: 0px;
+	}
+	.card p {
+		margin-left: 0px;
+		max-width: 220px;
+	}
+	.starter-template .card .small {
+		margin-bottom: 10px;
+		line-height: 18px;
+	}
+	.navbar-right {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+	.card-table {
+		width: 350px;
+		margin-left: -2px;
+	}
+	.card {
+		width: 350px;
+	}
+	.card h4 {
+		margin-left: 0px;
+	}
+	.card p {
+		margin-left: 0px;
+		margin-bottom: 25px;
+		max-width: 260px;
+	}
+	.starter-template .card .small {
+		margin-bottom: 10px;
+		line-height: 18px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	.card-table {
+		width: 650px;
+	}
+	.card {
+		width: 415px;
+	}
+	.card h4 {
+		margin-left: 20px;
+	}
+	.card p {
+		margin-left: 20px;
+		margin-bottom: 25px;
+	}
+}
+
+@media screen and (min-width: 1201px) and (max-width: 5000px) {
+	.card-table {
+		width: 870px;
+	}
+	.card {
+		width: 415px;
+	}
+	.card h4 {
+		margin-left: 20px;
+	}
+	.card p {
+		margin-left: 20px;
+		margin-bottom: 25px;
+	}
+}
+
+
+
+.navbar {
+	margin: 0px auto;
+	padding: 0px 20px;
+	max-width: 1400px;
+}
+
+.navbar a {
+	border-bottom: none;
+}
+
+.navbar li a:hover {
+	border-bottom: none;
+	color: #ed3e44;
+	background-color: transparent;
+}
+
+.navbar-brand {
+	padding-top: 30px;
+}
+
+.navbar-brand img {
+	width: 25px;
+}
+
+.navbar-brand:hover {
+	border-bottom: none;
+}
+
+.navbar-nav {
+	font-size: 19px;
+	font-weight: bold;
+	color: black;
+	padding: 18px 0 0 0;
+	margin: auto;
+}
+
+.navbar-nav li a {
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	padding-left: 20px;
+}
+
+.starter-template {
+	margin-top: 150px;
+	max-width: 1000px;
+}
+
+
+#neat {
+	font-family: Artifika;
+	font-size: 53px;
+	margin: 0;
+	padding: 0px;
+	line-height: 60px;
+}
+
+#version {
+	color:#999;
+	font-size: 16px;
+	text-indent: 2px;
+}
+
+#subh {
+	font-size: 49px;
+	line-height: 59px;
+	color: #333333;
+	margin-bottom: 30px;
+}
+
+.button {
+	box-shadow: 0 1.25rem 1rem -1.5rem rgba(0, 212, 255, 0.3), 0 0.5rem 1.75rem -0.25rem rgba(0, 212, 255, 0.2), 0 1.25rem 2.5rem rgba(0, 212, 255, 0.1);
+  background-color: #00d4ff;
+  background-image: linear-gradient(to bottom right, #21e9f4, #00d4ff);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+ 	font-weight: 500;
+	letter-spacing: 0.01em;
+	line-height: 1;
+	padding: 1em 2em;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 150ms ease;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	transition: transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.list {
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+.list li {
+	font-size: 15px;
+}
+
+.starter-template {
+	max-width: 650px;
+}
+
+
+.starter-template h1 {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.starter-template p {
+	margin-bottom: 30px;
+	font-size: 15px;
+	font-family: 'Segoe UI';
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.starter-template img {
+	margin-bottom: 20px;
+	box-shadow: 0 0 0 3px #eee;
+	border: rgb(204, 204, 204);
+}
+
+.emoji {
+	font-size: 28px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.emoji2 {
+	font-size: 25px;
+	display: inline-block;
+}
+
+.container {
+	margin: 0px auto;
+	padding: 0px auto;
+	max-width: 1000px;
+}
+
+.card {
+	border: 1px solid rgb(204, 204, 204);
+	border-radius: 3px;
+	box-shadow: 0 0 0 1px #eee;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	position: relative;
+}
+
+.card img {
+	max-width: 22px;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-right: 5px;
+}
+
+.card h4 {
+	font-family: 'Artifika', serif;
+	margin-top: 25px;
+	margin-bottom: 3px;
+}
+
+.card p {
+	color: rgb(153, 153, 153);
+	font-weight: 100;
+	font-size: 13px;
+}
+
+
+.top {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 60px;
+	border-left: 1px solid rgb(204, 204, 204);
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+
+.bottom {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 60px;
+	border-left: 1px solid rgb(204, 204, 204);
+}
+
+.card-side .heading {
+	margin-bottom: 0;
+	font-size: 12px;
+	text-align: center;
+	margin-left: 0;
+}
+
+.card-side .number {
+	color: black;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.lead {
+	font-size: 18px;
+	font-family: Segoe UI;
+	color: #333;
+}
+
+h1 {
+	font-family: Artifika;
+	font-size: 43px;
+}
+
+.footer {
+	margin-top: 80px;
+	padding-top: 58px;
+	border-top: 5px solid #00d4ff;
+	margin-bottom: 50px;
+}
+
+.footer p,a {
+	font-size: 15px;
+	line-height: 30px;
+}
+
+a {
+	border-bottom: 1px solid #ed3e44;
+	color: #ed3e44;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: .14em solid #ed3e44;
+	color: #ed3e44;
+	text-decoration: none;
+}
+
