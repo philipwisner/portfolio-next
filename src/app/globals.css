@@ -84,10 +84,20 @@
     }
   }
   .cards-container {
-    @apply flex justify-start items-end mb-20 mt-8 gap-[5%];
+    @apply flex justify-start items-end mb-20 mt-8 gap-[3%];
   }
   .card-container {
     @apply flex flex-col justify-center items-center  w-[20%];
+  }
+  .card-image {
+    @apply flex justify-center items-center;
+  }
+  .card {
+    @apply flex flex-col justify-end items-center w-[30%] mb-10 bg-white border border-gray-100 rounded-lg shadow overflow-hidden;
+    height: 250px;
+    img {
+      max-height: 100px;
+    }
   }
 }
 
