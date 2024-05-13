@@ -76,7 +76,7 @@
     @apply text-2xl text-cobalt-800 hover:text-cobalt-700 text-center block;
   }
   .skills-container {
-    @apply flex justify-center items-end mb-20 mt-8 gap-10;
+    @apply flex justify-center items-end mb-20 mt-8 mr-auto ml-auto gap-10 max-w-[1000px];
   }
   .skill-container {
     @apply flex flex-col justify-center items-center;
@@ -88,7 +88,7 @@
     @apply flex justify-start items-end mb-20 mt-8 gap-[2%];
   }
   .card-container {
-    @apply flex flex-col justify-stretch items-center w-[23%] mb-10;
+    @apply flex-nowrap flex-col justify-stretch items-center w-[23%] mb-10;
     height: 260px;
     img {
       max-height: 130px;

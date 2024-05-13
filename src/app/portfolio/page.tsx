@@ -10,12 +10,73 @@ export default function Portfolio() {
   const cards = {
     apps: [
       {
-        name: 'Surveys',
-        value: 'surveys',
-        image: '/logos/surveys.svg',
+        name: 'Asset-Map',
+        value: 'asset-map',
+        image: '/logos/assetmap-block.svg',
         description:
-          'An app for financial advisors to send surveys their clients to fill out.',
-        link: 'https://www.figma.com/proto/Saz32uktuodrgq4iTTi9lg/Surveys?page-id=0%3A1&type=design&node-id=2-2649&viewport=2393%2C1483%2C0.16&t=nPPgXSV9kwnu9mVr-1&scaling=min-zoom&starting-point-node-id=2%3A3641&mode=design',
+          'Financial visualization app to help provide better financial advice engagement.',
+        link: 'https://app.asset-map.com/ampux/auth',
+      },
+      {
+        name: 'MLab',
+        value: 'mlab',
+        image: '/logos/MLab.svg',
+        description:
+          'MLab is a demo website to showcase various use cases of Machine Learning.',
+        link: 'http://prakash.ai',
+      },
+      {
+        name: 'Streamy',
+        value: 'streamy',
+        image: '/logos/Streamy.svg',
+        description:
+          'Streamy is a demso streaming service app made similar to Spotify.',
+        link: 'https://philipwisner.github.io/streamy/#/library',
+      },
+      {
+        name: 'Todos',
+        value: 'todos',
+        image: '/logos/Todos.svg',
+        description: 'A minimalist Todo App built for mobile.',
+        link: '',
+      },
+      {
+        name: 'Encompass',
+        value: 'encompass',
+        image: '/logos/encompass.svg',
+        description:
+          'Encompass is a web application designed to facilitate the process of learning.',
+        link: 'https://encompass.mathematicalthinking.org/',
+      },
+      {
+        name: 'Minimo',
+        value: 'Minimo',
+        image: '/logos/Minimo.svg',
+        description: 'A minimalist blogging and thought capturing platform.',
+        link: 'https://minimo.herokuapp.com/home',
+      },
+      {
+        name: 'Farm Voyage',
+        value: 'farmvoyage',
+        image: '/logos/farm voyage.svg',
+        description:
+          'Find local farms, vineyards, ecolodges before you plan your next roadtrip.',
+        link: 'https://farm-voyage.herokuapp.com/',
+      },
+      {
+        name: 'Drag Quiz',
+        value: 'dragquiz',
+        image: '/logos/dragquiz.svg',
+        description:
+          'An online quiz game that tests your knowledge of all things drag queens.',
+        link: 'https://philipwisner.github.io/Drag-Quiz/#',
+      },
+      {
+        name: 'Diti',
+        value: 'diti',
+        image: '/logos/Diti.svg',
+        description: 'A Simple VanillaJS To Do App built from scratch.',
+        link: 'https://philipwisner.github.io/Diti',
       },
     ],
     design: [
@@ -201,13 +262,13 @@ export default function Portfolio() {
       {
         name: 'Coding Challenges',
         value: 'exercises',
-        image: '/logos/ironhack.png',
-        description:
-          'Take a look at websites, codes and projects completed daily after the bootcamp.',
+        image: '/logos/hackerrank.png',
+        description: `<a href="https://github.com/philipwisner/10-Days-of-JavaScript" target="_blank" class="inline-link">10 Days of JavaScript</a><br/><a href="https://github.com/philipwisner/30-Days-of-Code-HackerRank" target="_blank" class="inline-link">30 Days of Code</a>`,
         link: '/ironhack/daily-exercises.html',
       },
     ],
   };
+
   return (
     <div className="container">
       <Header name="Portfolio" />

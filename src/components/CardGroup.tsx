@@ -55,7 +55,10 @@ function CardGroup(props: Props) {
                 >
                   {card.name}
                 </a>
-                <p className="text-base mt-2">{card.description}</p>
+                <p
+                  className="text-base mt-2"
+                  dangerouslySetInnerHTML={{ __html: card.description }}
+                />
               </div>
             </li>
             // <li key={card.value} className="card group">
