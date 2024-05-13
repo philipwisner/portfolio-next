@@ -272,9 +272,13 @@ export default function Portfolio() {
   return (
     <div className="container">
       <Header name="Portfolio" />
-      <CardGroup heading={'Apps'} cards={cards.apps} />
-      <CardGroup heading={'Design'} cards={cards.design} />
-      <CardGroup heading={'Websites'} cards={cards.websites} />
+      <CardGroup heading={'Apps'} cards={cards.apps} seeMore="/apps" />
+      <CardGroup heading={'Design'} cards={cards.design} seeMore="/design" />
+      <CardGroup
+        heading={'Websites'}
+        cards={cards.websites}
+        seeMore="/websites"
+      />
       <CardGroup heading={'Learning'} cards={cards.learning} />
     </div>
   );

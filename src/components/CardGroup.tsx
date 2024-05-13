@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface CardType {
   name: string;
@@ -10,6 +11,7 @@ interface CardType {
 interface Props {
   heading: string;
   cards: Array<CardType>;
+  seeMore?: string;
 }
 
 function CardGroup(props: Props) {
@@ -28,7 +30,14 @@ function CardGroup(props: Props) {
         </p>
       </a> */}
 
-      <h3>{props.heading}</h3>
+      <h3>
+        {props.heading}{' '}
+        {props.seeMore && (
+          <Link className="secondary-link ml-2" href={props.seeMore}>
+            See More
+          </Link>
+        )}
+      </h3>
       <ul className="cards-container">
         {props.cards.map((card) => {
           return (

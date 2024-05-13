@@ -20,7 +20,7 @@ export default function About() {
             height={500}
           />
         </div>
-        <h3>Profile</h3>
+        <h4>Profile</h4>
         <p className="paragraph-chunk">
           I am a Full Stack JavaScript Developer who loves learning new
           technologies and frameworks. I also love design, UX/UI and creating
@@ -31,14 +31,14 @@ export default function About() {
           </a>
           .
         </p>
-        <h3>From</h3>
+        <h4>From</h4>
         <p className="paragraph-chunk">
           I was born and raised in the suburbs of Philadelphia. My maternal
           family is Italian which entitles me to have dual citizenship with
           Italy. Soon I will be authorized to work in the European Union along
           with the US.
         </p>
-        <h3>Work Experience</h3>
+        <h4>Work Experience</h4>
         <p className="paragraph-chunk">
           I am currently employed as a Senior Front End Developer at Asset Map.
           Where I also work on the creative and UI/UX aspects of our software. I
@@ -58,7 +58,7 @@ export default function About() {
           </a>
           .
         </p>
-        <h3>Bootcamp</h3>
+        <h4>Bootcamp</h4>
         <p className="paragraph-chunk">
           I graduated from Ironhack’s Full Stack Web Development Bootcamp on
           October 2017 in Barcelona. At the bootcamp I learned the fundamentals
@@ -71,7 +71,7 @@ export default function About() {
           </a>
           .
         </p>
-        <h3>Higher Education</h3>
+        <h4>Higher Education</h4>
         <p className="paragraph-chunk">
           I attended Penn State from 2009-2013 obtaining degrees in Marketing,
           Spanish, Supply Chain Management, IT and International Business. While
@@ -89,7 +89,7 @@ export default function About() {
           them improve their English and integrate into American university
           culture.
         </p>
-        <h3>Travel</h3>
+        <h4>Travel</h4>
         <p className="paragraph-chunk">
           As of today I have currently traveled to 50+ countries. With my most
           recent travels being 380 days spent traveling Latin America. To see a
@@ -100,7 +100,7 @@ export default function About() {
           </a>
           .
         </p>
-        <h3>About this site</h3>
+        <h4>About this site</h4>
         <p className="paragraph-chunk">
           This site is made from scratch, 100% written and designed by me. I am
           using Bootstrap to help with the responsive design, but I have also

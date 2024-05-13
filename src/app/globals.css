@@ -36,8 +36,11 @@
   .inline-link {
     @apply text-cobalt-800 font-bold hover:text-cobalt-700;
   }
-  .secondary-link {
+  .contact-link {
     @apply text-gray-400 text-2xl font-normal hover:text-cobalt-800;
+  }
+  .secondary-link {
+    @apply text-gray-400 text-lg font-semibold hover:text-gray-800;
   }
   .list-container {
     @apply text-center mt-[8vh];
@@ -119,7 +122,13 @@ h2 {
 }
 
 h3 {
+  @apply text-gray-900 text-3xl font-semibold mb-2;
+}
+h4 {
   @apply text-gray-900 text-2xl font-semibold mb-2;
+}
+h5 {
+  @apply text-gray-900 text-xl font-semibold mb-2;
 }
 
 p {
