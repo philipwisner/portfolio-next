@@ -1,19 +1,16 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import CardGroup, { CardType } from '@/components/CardGroup';
-import { designs } from '@/data/designs';
+import designs from '@/data/designs';
+import { FilterByCategory } from '@/utils/utils';
 
 export const metadata: Metadata = {
   title: 'Philip Wisner - Design',
 };
 
-const filterByCategory = (category: string): CardType[] => {
-  return designs.filter((c) => c.categories.includes(category));
-};
-
 export default function Design() {
-  const wireframes: CardType[] = filterByCategory('wireframes');
-  const original: CardType[] = filterByCategory('original');
+  const wireframes: CardType[] = FilterByCategory('wireframe', designs);
+  const original: CardType[] = FilterByCategory('original', designs);
   return (
     <div className="container">
       <Header name="Design" />

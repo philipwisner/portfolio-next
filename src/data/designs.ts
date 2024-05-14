@@ -1,6 +1,6 @@
 import { CardType } from '@/components/CardGroup';
 
-export const designs: CardType[] = [
+const designs: CardType[] = [
   {
     name: 'Surveys',
     value: 'surveys',
@@ -8,7 +8,7 @@ export const designs: CardType[] = [
     description:
       'An app for financial advisors to send surveys their clients to fill out.',
     link: 'https://www.figma.com/proto/Saz32uktuodrgq4iTTi9lg/Surveys?page-id=0%3A1&type=design&node-id=2-2649&viewport=2393%2C1483%2C0.16&t=nPPgXSV9kwnu9mVr-1&scaling=min-zoom&starting-point-node-id=2%3A3641&mode=design',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Asset-Map',
@@ -17,7 +17,7 @@ export const designs: CardType[] = [
     description:
       'Financial visualization app to help provide better financial advice engagement.',
     link: 'https://www.figma.com/proto/mwXJcFhGgyY73OYIKklKGE/Asset-Map?page-id=1266%3A9393&type=design&node-id=1-25920&viewport=5133%2C-9287%2C0.41&t=dz2tucx4J80wIz2A-9&scaling=min-zoom&starting-point-node-id=1%3A25920',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Streamy',
@@ -25,7 +25,7 @@ export const designs: CardType[] = [
     image: '/logos/Streamy.svg',
     description: 'A simple media streaming prototype similar to Spotify.',
     link: 'https://www.behance.net/gallery/91755021/Streamy',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Todos',
@@ -33,7 +33,7 @@ export const designs: CardType[] = [
     image: '/logos/Todos.svg',
     description: 'A minimalist Todo App built for mobile.',
     link: 'https://xd.adobe.com/view/ee12201c-3db6-4953-5863-940d7f8d9222-9823/',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'S2i Group',
@@ -50,7 +50,7 @@ export const designs: CardType[] = [
     description:
       'A website to demonstrate different implementations of Machine Learning.',
     link: 'https://www.behance.net/gallery/91763401/MLab',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'VendorReg',
@@ -58,15 +58,15 @@ export const designs: CardType[] = [
     image: '/logos/VendorReg.svg',
     description: 'An app for keeping track of vendors, products and contacts.',
     link: 'https://xd.adobe.com/view/06ca6252-2189-4dc6-57b6-cf4362adec60-70fb/',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Ambulnz',
     value: 'ambulnz',
     image: '/logos/Ambulnz.svg',
-    description: 'A Simple Questionnaire for outpatient dropoff.',
+    description: 'A Simple Questionnaire for outpatient drop off.',
     link: 'https://xd.adobe.com/view/a9488ce1-5188-4e90-418f-07e63276e0a1-df79/',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Ask',
@@ -74,7 +74,7 @@ export const designs: CardType[] = [
     image: '/logos/Ask.svg',
     description: 'An app for moderating texted questions for Q&A sessions.',
     link: 'https://www.behance.net/gallery/91765771/ASK-Q-A-App',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Inventory',
@@ -82,7 +82,7 @@ export const designs: CardType[] = [
     image: '/logos/Inventory.svg',
     description: 'An app for scanning and keeping track of purchased assets.',
     link: 'https://xd.adobe.com/view/dca50301-12a0-42c8-6545-1335b58493bb-aa94/',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Encompass',
@@ -91,7 +91,7 @@ export const designs: CardType[] = [
     description:
       'A web app designed to facilitate the process of mathematical learning.',
     link: 'https://www.behance.net/gallery/75904551/Encompass',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Diti',
@@ -116,7 +116,7 @@ export const designs: CardType[] = [
     image: '/logos/minimo.svg',
     description: 'Take a look at my wireframes for my mobile design.',
     link: 'documents/Minimo%20Mobile.pdf',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Farm Voyage',
@@ -124,7 +124,7 @@ export const designs: CardType[] = [
     image: '/logos/farm%20voyage.svg',
     description: 'Take a look at my prototype for the desktop layout.',
     link: 'https://www.figma.com/proto/cXt9FG20cHbW3SKDexMcG9Eg/Farm-Voyage?scaling=contain&node-id=1%3A2',
-    categories: ['wireframe'],
+    categories: ['wireframe', 'portfolio'],
   },
   {
     name: 'Drag Quiz',
@@ -168,3 +168,5 @@ export const designs: CardType[] = [
     categories: ['original'],
   },
 ];
+
+export default designs;

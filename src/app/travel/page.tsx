@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import Header from '@/components/Header';
-import { countries } from '@/data/countries';
+import countries from '@/data/countries';
 import Script from 'next/script';
 import CountryGroup, { CountryType } from '@/components/CountryGroup';
 import { FilterByContinent } from '@/utils/utils';

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import SkillsGroup from '@/components/SkillsGroup';
-import { skills } from '@/data/skills';
+import skills from '@/data/skills';
 
 export const metadata: Metadata = {
   title: 'Philip Wisner - Skills',

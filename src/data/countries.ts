@@ -1,6 +1,6 @@
 import { CountryType } from '@/components/CountryGroup';
 
-export const countries: CountryType[] = [
+const countries: CountryType[] = [
   {
     continent: 'Asia',
     name: 'Afghanistan',
@@ -1676,3 +1676,5 @@ export const countries: CountryType[] = [
     emoji: '🇿🇼',
   },
 ];
+
+export default countries;

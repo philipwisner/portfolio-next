@@ -4,7 +4,7 @@ interface SkillsType {
   [key: string]: SkillType[];
 }
 
-export const skills: SkillsType = {
+const skills: SkillsType = {
   fundamentals: [
     { value: 'html', name: 'HTML', image: '/icons/html.png' },
     { value: 'css', name: 'CSS', image: '/icons/css.png' },
@@ -145,3 +145,5 @@ export const skills: SkillsType = {
     },
   ],
 };
+
+export default skills;
