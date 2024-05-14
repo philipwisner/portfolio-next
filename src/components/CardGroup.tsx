@@ -1,13 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+interface ButtonType {
+  text: string;
+  link: string;
+}
 export interface CardType {
   name: string;
   value: string;
   image: string;
-  description: string;
+  logo?: string;
+  screenshot?: string;
+  description?: string;
   link: string;
   categories: string[];
+  tagline?: string;
+  details?: string;
+  buttons?: ButtonType[];
 }
 
 interface Props {
@@ -68,7 +77,9 @@ function CardGroup(props: Props) {
                 </a>
                 <p
                   className="text-base mt-2"
-                  dangerouslySetInnerHTML={{ __html: card.description }}
+                  dangerouslySetInnerHTML={{
+                    __html: card.description as string,
+                  }}
                 />
               </div>
             </li>

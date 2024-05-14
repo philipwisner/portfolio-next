@@ -21,9 +21,14 @@ export default function SideNav() {
       name: 'Skills',
     },
     {
-      value: 'resume',
-      path: '/resume',
-      name: 'Resume',
+      value: 'apps',
+      path: '/apps',
+      name: 'Apps',
+    },
+    {
+      value: 'design',
+      path: '/design',
+      name: 'Design',
     },
     {
       value: 'websites',
@@ -31,24 +36,19 @@ export default function SideNav() {
       name: 'Websites',
     },
     {
-      value: 'apps',
-      path: '/apps',
-      name: 'Apps',
-    },
-    {
       value: 'portfolio',
       path: '/portfolio',
       name: 'Portfolio',
     },
     {
+      value: 'resume',
+      path: '/resume',
+      name: 'Resume',
+    },
+    {
       value: 'photography',
       path: '/photography',
       name: 'Photography',
-    },
-    {
-      value: 'design',
-      path: '/design',
-      name: 'Design',
     },
     {
       value: 'travel',
