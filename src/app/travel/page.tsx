@@ -3,43 +3,32 @@ import { useEffect } from 'react';
 import Header from '@/components/Header';
 import { countries } from '@/data/countries';
 import Script from 'next/script';
-import CountryGroup from '@/components/CountryGroup';
+import CountryGroup, { CountryType } from '@/components/CountryGroup';
+import { FilterByContinent } from '@/utils/utils';
 
 // export const metadata: Metadata = {
 //   title: "Philip Wisner - Travel",
 // };
 
-const filterByContinent = (continent: string) => {
-  return countries.filter((c) => c.continent === continent && c.visited);
-};
-
-// const mapCountries = () => {
-//   return countries.map((c) => {
-//     const match = emojis.find((e) => e.name === c.name);
-//     if (match) {
-//       c.emoji = match.emoji;
-//     } else {
-//       c.emoji = 'FIX';
-//     }
-//     return c;
-//   });
-// };
-
-// const test = mapCountries();
-// console.log('test', test);
-
 export default function Travel() {
-  const northAmerica = filterByContinent('North America');
-  const southAmerica = filterByContinent('South America');
-  const europe = filterByContinent('Europe');
-  const africa = filterByContinent('Africa');
-  const asia = filterByContinent('Asia');
-  const oceania = filterByContinent('Oceania');
+  const visitedCountries: CountryType[] = countries.filter((c) => c.visited);
 
-  const visitedCountries = countries.filter((c) => c.visited);
-  const subtractCountries = 3;
-  const visitedCountriesCount = visitedCountries.length;
-  const countriesCount = visitedCountriesCount - subtractCountries;
+  const northAmerica: CountryType[] = FilterByContinent(
+    'North America',
+    visitedCountries
+  );
+  const southAmerica: CountryType[] = FilterByContinent(
+    'South America',
+    visitedCountries
+  );
+  const europe: CountryType[] = FilterByContinent('Europe', visitedCountries);
+  const africa: CountryType[] = FilterByContinent('Africa', visitedCountries);
+  const asia: CountryType[] = FilterByContinent('Asia', visitedCountries);
+  const oceania: CountryType[] = FilterByContinent('Oceania', visitedCountries);
+
+  const subtractCountries: number = 3;
+  const visitedCountriesCount: number = visitedCountries.length;
+  const countriesCount: number = visitedCountriesCount - subtractCountries;
 
   useEffect(() => {
     document.title = `Philip Wisner - Travel`;

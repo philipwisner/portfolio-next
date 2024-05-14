@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-
 import Header from '@/components/Header';
 import Image from 'next/image';
 

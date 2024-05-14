@@ -1,16 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface CardType {
+export interface CardType {
   name: string;
   value: string;
   image: string;
   description: string;
   link: string;
+  categories: string[];
 }
+
 interface Props {
   heading: string;
-  cards: Array<CardType>;
+  cards: CardType[];
   seeMore?: string;
 }
 

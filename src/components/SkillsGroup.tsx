@@ -1,22 +1,24 @@
 import Image from 'next/image';
 
-interface SkillType {
+export interface SkillType {
   name: string;
   value: string;
   image: string;
   width?: number;
 }
-interface Props {
-  heading: string;
-  skills: Array<SkillType>;
-}
 
-function SkillsGroup(props: Props) {
+function SkillsGroup({
+  heading,
+  skills,
+}: {
+  heading: string;
+  skills: SkillType[];
+}) {
   return (
     <>
-      <h3 className="text-center">{props.heading}</h3>
+      <h3 className="text-center">{heading}</h3>
       <ul className="skills-container">
-        {props.skills.map((skill) => {
+        {skills.map((skill) => {
           return (
             <li key={skill.value} className="skill-container">
               <Image

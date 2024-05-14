@@ -1,15 +1,20 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+interface PathType {
+  name: string;
+  value: string;
+  path: string;
+}
 
 export default function SideNav() {
-  const pathname = usePathname();
+  const pathname: string = usePathname();
 
-  const isActive = (path: string) => {
+  const isActive = (path: string): boolean => {
     return path === pathname;
   };
 
-  const paths = [
+  const paths: PathType[] = [
     {
       value: 'skills',
       path: '/skills',

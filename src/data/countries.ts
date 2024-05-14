@@ -1,4 +1,6 @@
-export const countries = [
+import { CountryType } from '@/components/CountryGroup';
+
+export const countries: CountryType[] = [
   {
     continent: 'Asia',
     name: 'Afghanistan',
