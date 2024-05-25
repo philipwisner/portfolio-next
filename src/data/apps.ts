@@ -47,6 +47,8 @@ const apps: CardType[] = [
     name: 'MLab',
     value: 'mlab',
     image: '/logos/MLab.svg',
+    logo: '/logos/MLab-line.svg',
+    screenshot: '/screenshots/MLab-Screenshot.png',
     description:
       'MLab is a demo website to showcase various use cases of Machine Learning.',
     details:
@@ -59,6 +61,7 @@ const apps: CardType[] = [
     name: 'Streamy',
     value: 'streamy',
     image: '/logos/Streamy.svg',
+    logo: '/logos/Streamy.svg',
     description:
       'Streamy is a demso streaming service app made similar to Spotify.',
     link: 'https://philipwisner.github.io/streamy/#/library',
