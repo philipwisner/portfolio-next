@@ -61,9 +61,12 @@ const apps: CardType[] = [
     name: 'Streamy',
     value: 'streamy',
     image: '/logos/Streamy.svg',
-    logo: '/logos/Streamy.svg',
+    logo: '/logos/streamy-horizontal.svg',
+    details:
+      ' Streamy is a demo streaming service app made similar to Spotify. Frontend was done using Vue.',
     description:
       'Streamy is a demso streaming service app made similar to Spotify.',
+    tagline: 'Streamy is a simple streaming media player.',
     link: 'https://philipwisner.github.io/streamy/#/library',
     categories: ['portfolio'],
   },
