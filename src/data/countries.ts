@@ -390,7 +390,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'Denmark',
     id: 'DK',
-    visited: false,
+    visited: true,
     emoji: '🇩🇰',
   },
   {
@@ -495,7 +495,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'Finland',
     id: 'FI',
-    visited: false,
+    visited: true,
     emoji: '🇫🇮',
   },
   {
@@ -1126,7 +1126,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'Norway',
     id: 'NO',
-    visited: false,
+    visited: true,
     emoji: '🇳🇴',
   },
   {
@@ -1294,7 +1294,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'San Marino',
     id: 'SM',
-    visited: false,
+    visited: true,
     emoji: '🇸🇲',
   },
   {
@@ -1441,7 +1441,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'Sweden',
     id: 'SE',
-    visited: false,
+    visited: true,
     emoji: '🇸🇪',
   },
   {
