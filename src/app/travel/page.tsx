@@ -5,7 +5,6 @@ import countries from '@/data/countries';
 import Script from 'next/script';
 import CountryGroup, { CountryType } from '@/components/CountryGroup';
 import { FilterByContinent } from '@/utils/utils';
-import { count } from 'console';
 
 // export const metadata: Metadata = {
 //   title: "Philip Wisner - Travel",
