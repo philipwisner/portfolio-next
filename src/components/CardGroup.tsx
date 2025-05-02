@@ -9,6 +9,17 @@ export interface CardType {
   name: string;
   value: string;
   image: string;
+  description?: string;
+  link: string;
+  categories: string[];
+  tagline?: string;
+  details?: string;
+  buttons?: ButtonType[];
+}
+export interface AppType {
+  name: string;
+  value: string;
+  image: string;
   logo: string;
   screenshot: string;
   description?: string;

@@ -1,6 +1,6 @@
-import { CardType } from '@/components/CardGroup';
+import { AppType } from '@/components/CardGroup';
 
-const apps: CardType[] = [
+const apps: AppType[] = [
   {
     name: 'Asset-Map',
     value: 'asset-map',
