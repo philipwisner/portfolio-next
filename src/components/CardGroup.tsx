@@ -9,8 +9,8 @@ export interface CardType {
   name: string;
   value: string;
   image: string;
-  logo?: string;
-  screenshot?: string;
+  logo: string;
+  screenshot: string;
   description?: string;
   link: string;
   categories: string[];

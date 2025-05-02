@@ -62,6 +62,7 @@ const apps: CardType[] = [
     value: 'streamy',
     image: '/logos/Streamy.svg',
     logo: '/logos/streamy-horizontal.svg',
+    screenshot: '/logos/streamy-horizontal.svg',
     details:
       ' Streamy is a demo streaming service app made similar to Spotify. Frontend was done using Vue.',
     description:
@@ -74,6 +75,8 @@ const apps: CardType[] = [
     name: 'Todos',
     value: 'todos',
     image: '/logos/Todos.svg',
+    logo: '/logos/Todos.svg',
+    screenshot: '/logos/Todos.svg',
     description: 'A minimalist Todo App built for mobile.',
     link: '',
     categories: ['portfolio'],
@@ -82,6 +85,8 @@ const apps: CardType[] = [
     name: 'Encompass',
     value: 'encompass',
     image: '/logos/encompass.svg',
+    logo: '/logos/encompass.svg',
+    screenshot: '/logos/encompass.svg',
     description:
       'Encompass is a web application designed to facilitate the process of learning.',
     link: 'https://encompass.mathematicalthinking.org/',
@@ -91,6 +96,8 @@ const apps: CardType[] = [
     name: 'Minimo',
     value: 'Minimo',
     image: '/logos/Minimo.svg',
+    logo: '/logos/Minimo.svg',
+    screenshot: '/logos/Minimo.svg',
     description: 'A minimalist blogging and thought capturing platform.',
     link: 'https://minimo.herokuapp.com/home',
     categories: ['portfolio'],
@@ -99,6 +106,8 @@ const apps: CardType[] = [
     name: 'Farm Voyage',
     value: 'farmvoyage',
     image: '/logos/farm voyage.svg',
+    logo: '/logos/farm voyage.svg',
+    screenshot: '/logos/farm voyage.svg',
     description:
       'Find local farms, vineyards, eco-lodges before you plan your next road trip.',
     link: 'https://farm-voyage.herokuapp.com/',
@@ -108,6 +117,8 @@ const apps: CardType[] = [
     name: 'Drag Quiz',
     value: 'dragquiz',
     image: '/logos/dragquiz.svg',
+    logo: '/logos/dragquiz.svg',
+    screenshot: '/logos/dragquiz.svg',
     description:
       'An online quiz game that tests your knowledge of all things drag queens.',
     link: 'https://philipwisner.github.io/Drag-Quiz/#',
@@ -117,6 +128,8 @@ const apps: CardType[] = [
     name: 'Diti',
     value: 'diti',
     image: '/logos/Diti.svg',
+    logo: '/logos/Diti.svg',
+    screenshot: '/logos/Diti.svg',
     description: 'A Simple VanillaJS To Do App built from scratch.',
     link: 'https://philipwisner.github.io/Diti',
     categories: ['portfolio'],

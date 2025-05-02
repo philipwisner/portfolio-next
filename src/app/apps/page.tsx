@@ -11,7 +11,7 @@ export default function Apps() {
   return (
     <div className="container">
       <Header name="Apps" />
-      {apps.map((app, i) => {
+      {apps.map((app) => {
         return (
           <div
             key={app.value}
