@@ -20,13 +20,25 @@ function SkillsGroup({
       <ul className="skills-container">
         {skills.map((skill) => {
           return (
-            <li key={skill.value} className="skill-container">
-              <Image
-                src={skill.image}
-                alt={skill.value}
-                width={skill.width ? skill.width : 80}
-                height={skill.width ? skill.width : 80}
-              />
+            <li
+              key={skill.value}
+              className="skill-container flex justify-center align-middle content-center"
+            >
+              <div
+                style={{
+                  width: skill.width ? `${skill.width}px` : '80px',
+                  height: skill.width ? `${skill.width}px` : '80px',
+                  position: 'relative',
+                }}
+              >
+                <Image
+                  src={skill.image}
+                  alt={skill.value}
+                  // width={skill.width ? skill.width : 80}
+                  // height={skill.width ? skill.width : 80}
+                  fill={true}
+                />
+              </div>
               <p>{skill.name}</p>
             </li>
           );
