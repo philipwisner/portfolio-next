@@ -1,34 +1,31 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import countries from '@/data/countries';
 import Script from 'next/script';
 import CountryGroup, { CountryType } from '@/components/CountryGroup';
 import { FilterByContinent } from '@/utils/utils';
+import { count } from 'console';
 
 // export const metadata: Metadata = {
 //   title: "Philip Wisner - Travel",
 // };
 
 export default function Travel() {
-  const visitedCountries: CountryType[] = countries.filter((c) => c.visited);
-
-  const northAmerica: CountryType[] = FilterByContinent(
-    'North America',
-    visitedCountries
+  const countriesOnly: CountryType[] = countries.filter(
+    (country) => !country.territory
   );
-  const southAmerica: CountryType[] = FilterByContinent(
-    'South America',
-    visitedCountries
+  const territories: CountryType[] = countries.filter(
+    (country) => country.territory
   );
-  const europe: CountryType[] = FilterByContinent('Europe', visitedCountries);
-  const africa: CountryType[] = FilterByContinent('Africa', visitedCountries);
-  const asia: CountryType[] = FilterByContinent('Asia', visitedCountries);
-  const oceania: CountryType[] = FilterByContinent('Oceania', visitedCountries);
-
-  const subtractCountries: number = 3;
-  const visitedCountriesCount: number = visitedCountries.length;
-  const countriesCount: number = visitedCountriesCount - subtractCountries;
+  const visitedCountries: CountryType[] = countriesOnly.filter(
+    (c) => c.visited
+  );
+  const visitedTerritories: CountryType[] = territories.filter(
+    (c) => c.visited
+  );
+  const [showTerritories, setShowTerritories] = useState(true);
+  const [showAllCountries, setShowAllCountries] = useState(false);
 
   useEffect(() => {
     document.title = `Philip Wisner - Travel`;
@@ -344,34 +341,114 @@ export default function Travel() {
       <Script
         src="https://www.amcharts.com/lib/3/ammap.js"
         type="text/javascript"
-      ></Script>
+      />
       <Script
         src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"
         type="text/javascript"
-      ></Script>
+      />
       <Script
         src="https://www.amcharts.com/lib/3/themes/dark.js"
         type="text/javascript"
-      ></Script>
+      />
       <div id="mapdiv" className="w-full h-[450px]"></div>
-      <h3 className="text-center mt-8">
-        <span className="font-bold text-cobalt-800">{countriesCount}</span>{' '}
-        countries visited so far
-      </h3>
+      <p className="text-center mt-8 font-regular text-gray-900 text-3xl mb-1">
+        Visited{' '}
+        <span className="font-bold text-cobalt-800">
+          {visitedCountries?.length}
+        </span>{' '}
+        {showAllCountries && (
+          <span>
+            out of <span className="font-bold">{countriesOnly?.length}</span>{' '}
+          </span>
+        )}
+        Countries
+      </p>
+      {showTerritories && (
+        <p className="text-center text-lg font-light">
+          <span className="font-bold text-cobalt-800">
+            {visitedTerritories?.length}
+          </span>{' '}
+          out of{' '}
+          <span className="font-bold text-gray-900">{territories?.length}</span>{' '}
+          territories visited
+        </p>
+      )}
+      <div className="flex items-center justify-center align-middle m-4">
+        <div className="flex items-center mr-6">
+          <input
+            checked={showTerritories}
+            id="territories-checkbox"
+            onChange={() => setShowTerritories(!showTerritories)}
+            type="checkbox"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          />
+          <label
+            htmlFor="territories-checkbox"
+            className="ms-2 text-sm font-medium text-gray-600"
+          >
+            Include Territories
+          </label>
+        </div>
+        <div className="flex items-center">
+          <input
+            id="countries-checkbox"
+            checked={showAllCountries}
+            onChange={() => setShowAllCountries(!showAllCountries)}
+            type="checkbox"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          />
+          <label
+            htmlFor="countries-checkbox"
+            className="ms-2 text-sm font-medium text-gray-600"
+          >
+            Show All Countries
+          </label>
+        </div>
+      </div>
       <div className="flex gap-[5%] justify-center mt-10">
         <div className="w-[20%] min-w-[200px]">
-          <CountryGroup heading={'North America'} countries={northAmerica} />
+          <CountryGroup
+            heading={'North America'}
+            countries={FilterByContinent('North America', countries)}
+            showingAll={showAllCountries}
+            showTerritories={showTerritories}
+          />
         </div>
         <div className="w-[20%] min-w-[200px]">
-          <CountryGroup heading={'Europe'} countries={europe} />
+          <CountryGroup
+            heading={'Europe'}
+            countries={FilterByContinent('Europe', countries)}
+            showingAll={showAllCountries}
+            showTerritories={showTerritories}
+          />
         </div>
         <div className="w-[20%] min-w-[200px]">
-          <CountryGroup heading={'South America'} countries={southAmerica} />
+          <CountryGroup
+            heading={'South America'}
+            countries={FilterByContinent('South America', countries)}
+            showingAll={showAllCountries}
+            showTerritories={showTerritories}
+          />
         </div>
         <div className="w-[20%] min-w-[200px]">
-          <CountryGroup heading={'Asia'} countries={asia} />
-          <CountryGroup heading={'Africa'} countries={africa} />
-          <CountryGroup heading={'Oceania'} countries={oceania} />
+          <CountryGroup
+            heading={'Asia'}
+            countries={FilterByContinent('Asia', countries)}
+            showingAll={showAllCountries}
+            showTerritories={showTerritories}
+          />
+          <CountryGroup
+            heading={'Africa'}
+            countries={FilterByContinent('Africa', countries)}
+            showingAll={showAllCountries}
+            showTerritories={showTerritories}
+          />
+          <CountryGroup
+            heading={'Oceania'}
+            countries={FilterByContinent('Oceania', countries)}
+            showingAll={showAllCountries}
+            showTerritories={showTerritories}
+          />
         </div>
       </div>
     </div>
