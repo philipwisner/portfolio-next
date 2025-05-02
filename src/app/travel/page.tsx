@@ -24,7 +24,7 @@ export default function Travel() {
   const visitedTerritories: CountryType[] = territories.filter(
     (c) => c.visited
   );
-  const [showTerritories, setShowTerritories] = useState(true);
+  const [showTerritories, setShowTerritories] = useState(false);
   const [showAllCountries, setShowAllCountries] = useState(false);
 
   useEffect(() => {
@@ -408,16 +408,16 @@ export default function Travel() {
       <div className="flex gap-[5%] justify-center mt-10">
         <div className="w-[20%] min-w-[200px]">
           <CountryGroup
-            heading={'North America'}
-            countries={FilterByContinent('North America', countries)}
+            heading={'Europe'}
+            countries={FilterByContinent('Europe', countries)}
             showingAll={showAllCountries}
             showTerritories={showTerritories}
           />
         </div>
         <div className="w-[20%] min-w-[200px]">
           <CountryGroup
-            heading={'Europe'}
-            countries={FilterByContinent('Europe', countries)}
+            heading={'North America'}
+            countries={FilterByContinent('North America', countries)}
             showingAll={showAllCountries}
             showTerritories={showTerritories}
           />
