@@ -1519,6 +1519,13 @@ const countries: CountryType[] = [
     emoji: '🇹🇯',
   },
   {
+    continent: 'Asia',
+    name: 'Taiwan',
+    id: 'TW',
+    visited: false,
+    emoji: '🇹🇼',
+  },
+  {
     continent: 'Africa',
     name: 'Tanzania',
     id: 'TZ',
