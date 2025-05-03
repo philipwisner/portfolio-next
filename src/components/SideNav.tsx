@@ -63,7 +63,7 @@ export default function SideNav() {
   ];
 
   return (
-    <aside className="side-nav">
+    <aside className="side-nav min-w-[300px]">
       <div>
         <p className="name">&lt;philip.wisner&gt;</p>
         <p className="title">web developer</p>
