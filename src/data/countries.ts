@@ -83,7 +83,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Aruba',
+    name: 'Aruba (NL)',
     id: 'AW',
     visited: false,
     emoji: '🇦🇼',
@@ -168,7 +168,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Bermuda',
+    name: 'Bermuda (UK)',
     id: 'BM',
     visited: false,
     emoji: '🇧🇲',
@@ -292,7 +292,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Cayman Islands',
+    name: 'Cayman Islands (UK)',
     id: 'KY',
     visited: false,
     emoji: '🇰🇾',
@@ -606,7 +606,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Greenland',
+    name: 'Greenland (DK)',
     id: 'GL',
     visited: false,
     emoji: '🇬🇱',
@@ -621,7 +621,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Guadeloupe',
+    name: 'Guadeloupe (FR)',
     id: 'GP',
     visited: false,
     emoji: '🇬🇵',
@@ -976,7 +976,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Martinique',
+    name: 'Martinique (FR)',
     id: 'MQ',
     visited: false,
     emoji: '🇲🇶',
@@ -1048,7 +1048,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Montserrat',
+    name: 'Montserrat (UK)',
     id: 'MS',
     visited: false,
     emoji: '🇲🇸',
@@ -1326,7 +1326,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Saint Pierre and Miquelon',
+    name: 'Saint Pierre and Miquelon (FR)',
     id: 'PM',
     visited: false,
     emoji: '🇵🇲',
@@ -1701,7 +1701,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'British Virgin Islands',
+    name: 'British Virgin Islands (UK)',
     id: 'VG',
     visited: false,
     emoji: '🇻🇬',
