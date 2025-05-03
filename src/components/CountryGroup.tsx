@@ -5,6 +5,7 @@ export interface CountryType {
   visited: boolean;
   emoji: string;
   territory?: boolean;
+  unsafe?: boolean;
 }
 
 function CountryGroup({
@@ -50,7 +51,7 @@ function CountryGroup({
             return (
               <li
                 key={country.id}
-                className="py-1"
+                className={`py-1 ${country.unsafe ? 'text-red-600' : undefined}`}
                 style={
                   showingAll
                     ? {

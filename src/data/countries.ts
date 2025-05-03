@@ -7,6 +7,7 @@ const countries: CountryType[] = [
     id: 'AF',
     visited: false,
     emoji: '🇦🇫',
+    unsafe: true,
   },
   {
     continent: 'Europe',
@@ -244,6 +245,7 @@ const countries: CountryType[] = [
     id: 'BF',
     visited: false,
     emoji: '🇧🇫',
+    unsafe: true,
   },
   {
     continent: 'Africa',
@@ -294,6 +296,7 @@ const countries: CountryType[] = [
     id: 'CF',
     visited: false,
     emoji: '🇨🇫',
+    unsafe: true,
   },
   {
     continent: 'Africa',
@@ -301,6 +304,7 @@ const countries: CountryType[] = [
     id: 'TD',
     visited: false,
     emoji: '🇹🇩',
+    unsafe: true,
   },
   {
     continent: 'South America',
@@ -381,6 +385,7 @@ const countries: CountryType[] = [
     id: 'CU',
     visited: false,
     emoji: '🇨🇺',
+    unsafe: true,
   },
   {
     continent: 'Asia',
@@ -656,6 +661,7 @@ const countries: CountryType[] = [
     id: 'HT',
     visited: false,
     emoji: '🇭🇹',
+    unsafe: true,
   },
   {
     continent: 'Europe',
@@ -720,6 +726,7 @@ const countries: CountryType[] = [
     id: 'IQ',
     visited: false,
     emoji: '🇮🇶',
+    unsafe: true,
   },
   {
     continent: 'Europe',
@@ -742,6 +749,7 @@ const countries: CountryType[] = [
     id: 'IL',
     visited: false,
     emoji: '🇮🇱',
+    unsafe: true,
   },
   {
     continent: 'Europe',
@@ -841,6 +849,7 @@ const countries: CountryType[] = [
     id: 'LB',
     visited: false,
     emoji: '🇱🇧',
+    unsafe: true,
   },
   {
     continent: 'Africa',
@@ -862,6 +871,7 @@ const countries: CountryType[] = [
     id: 'LY',
     visited: false,
     emoji: '🇱🇾',
+    unsafe: true,
   },
   {
     continent: 'Europe',
@@ -1113,6 +1123,7 @@ const countries: CountryType[] = [
     id: 'NE',
     visited: false,
     emoji: '🇳🇪',
+    unsafe: true,
   },
   {
     continent: 'Africa',
@@ -1143,6 +1154,7 @@ const countries: CountryType[] = [
     id: 'KP',
     visited: false,
     emoji: '🇰🇵',
+    unsafe: true,
   },
   {
     continent: 'Oceania',
@@ -1186,6 +1198,7 @@ const countries: CountryType[] = [
     id: 'PS',
     visited: false,
     emoji: '🇵🇸',
+    unsafe: true,
   },
   {
     continent: 'North America',
@@ -1272,6 +1285,7 @@ const countries: CountryType[] = [
     id: 'RU',
     visited: false,
     emoji: '🇷🇺',
+    unsafe: true,
   },
   {
     continent: 'Africa',
@@ -1407,6 +1421,7 @@ const countries: CountryType[] = [
     id: 'SO',
     visited: false,
     emoji: '🇸🇴',
+    unsafe: true,
   },
   {
     continent: 'Africa',
@@ -1428,6 +1443,7 @@ const countries: CountryType[] = [
     id: 'SS',
     visited: false,
     emoji: '🇸🇸',
+    unsafe: true,
   },
   {
     continent: 'Europe',
@@ -1449,6 +1465,7 @@ const countries: CountryType[] = [
     id: 'SD',
     visited: false,
     emoji: '🇸🇩',
+    unsafe: true,
   },
   {
     continent: 'South America',
@@ -1492,6 +1509,7 @@ const countries: CountryType[] = [
     id: 'SY',
     visited: false,
     emoji: '🇸🇾',
+    unsafe: true,
   },
   {
     continent: 'Asia',
@@ -1520,6 +1538,7 @@ const countries: CountryType[] = [
     id: 'CD',
     visited: false,
     emoji: '🇨🇩',
+    unsafe: true,
   },
   {
     continent: 'Asia',
@@ -1606,6 +1625,7 @@ const countries: CountryType[] = [
     id: 'UA',
     visited: false,
     emoji: '🇺🇦',
+    unsafe: true,
   },
   {
     continent: 'Asia',
@@ -1655,6 +1675,7 @@ const countries: CountryType[] = [
     id: 'VE',
     visited: false,
     emoji: '🇻🇪',
+    unsafe: true,
   },
   {
     continent: 'Asia',
@@ -1701,6 +1722,7 @@ const countries: CountryType[] = [
     id: 'YE',
     visited: false,
     emoji: '🇾🇪',
+    unsafe: true,
   },
   {
     continent: 'Africa',
