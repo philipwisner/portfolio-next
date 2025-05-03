@@ -189,6 +189,14 @@ const countries: CountryType[] = [
     emoji: '🇧🇴',
   },
   {
+    continent: 'North America',
+    name: 'Bonaire',
+    id: 'BQ',
+    visited: true,
+    emoji: '🇧🇶',
+    territory: true,
+  },
+  {
     continent: 'Europe',
     name: 'Bosnia and Herzegovina',
     id: 'BA',
@@ -386,6 +394,14 @@ const countries: CountryType[] = [
     visited: false,
     emoji: '🇨🇺',
     unsafe: true,
+  },
+  {
+    continent: 'North America',
+    name: 'Curaçao',
+    id: 'CW',
+    visited: true,
+    emoji: '🇨🇼',
+    territory: true,
   },
   {
     continent: 'Asia',
@@ -1086,14 +1102,6 @@ const countries: CountryType[] = [
     id: 'NL',
     visited: true,
     emoji: '🇳🇱',
-  },
-  {
-    continent: 'North America',
-    name: 'Netherlands Antilles',
-    id: 'AN',
-    visited: true,
-    emoji: '🇧🇶',
-    territory: true,
   },
   {
     continent: 'Oceania',
