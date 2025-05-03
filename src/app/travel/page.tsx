@@ -393,52 +393,110 @@ export default function Travel() {
           </label>
         </div>
       </div>
-      <div className="flex gap-[5%] justify-center mt-10">
-        <div className="w-[20%] min-w-[200px]">
-          <CountryGroup
-            heading={'Europe'}
-            countries={FilterByContinent('Europe', countries)}
-            showingAll={showAllCountries}
-            showTerritories={showTerritories}
-          />
-        </div>
-        <div className="w-[20%] min-w-[200px]">
-          <CountryGroup
-            heading={'North America'}
-            countries={FilterByContinent('North America', countries)}
-            showingAll={showAllCountries}
-            showTerritories={showTerritories}
-          />
-        </div>
-        <div className="w-[20%] min-w-[200px]">
-          <CountryGroup
-            heading={'South America'}
-            countries={FilterByContinent('South America', countries)}
-            showingAll={showAllCountries}
-            showTerritories={showTerritories}
-          />
-        </div>
-        <div className="w-[20%] min-w-[200px]">
-          <CountryGroup
-            heading={'Asia'}
-            countries={FilterByContinent('Asia', countries)}
-            showingAll={showAllCountries}
-            showTerritories={showTerritories}
-          />
-          <CountryGroup
-            heading={'Africa'}
-            countries={FilterByContinent('Africa', countries)}
-            showingAll={showAllCountries}
-            showTerritories={showTerritories}
-          />
-          <CountryGroup
-            heading={'Oceania'}
-            countries={FilterByContinent('Oceania', countries)}
-            showingAll={showAllCountries}
-            showTerritories={showTerritories}
-          />
-        </div>
-      </div>
+      {showAllCountries ? (
+        <>
+          <div className="columns-4 md:columns-3 lg:columns-4 gap-6  mt-10">
+            <div className="break-inside-avoid">
+              <CountryGroup
+                heading={'Europe'}
+                countries={FilterByContinent('Europe', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+            <div className="break-inside-avoid">
+              <CountryGroup
+                heading={'North America'}
+                countries={FilterByContinent('North America', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+            <div className="break-inside-avoid">
+              <CountryGroup
+                heading={'South America'}
+                countries={FilterByContinent('South America', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+            <div className="break-inside-avoid">
+              <CountryGroup
+                heading={'Asia'}
+                countries={FilterByContinent('Asia', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+            <div className="break-inside-avoid">
+              <CountryGroup
+                heading={'Oceania'}
+                countries={FilterByContinent('Oceania', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+            <div className="break-inside-avoid">
+              <CountryGroup
+                heading={'Africa'}
+                countries={FilterByContinent('Africa', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          {' '}
+          <div className="flex gap-[5%] justify-center mt-10">
+            <div className="w-[20%] min-w-[200px]">
+              <CountryGroup
+                heading={'Europe'}
+                countries={FilterByContinent('Europe', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+            <div className="w-[20%] min-w-[200px]">
+              <CountryGroup
+                heading={'North America'}
+                countries={FilterByContinent('North America', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+            <div className="w-[20%] min-w-[200px]">
+              <CountryGroup
+                heading={'South America'}
+                countries={FilterByContinent('South America', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+            <div className="w-[20%] min-w-[200px]">
+              <CountryGroup
+                heading={'Asia'}
+                countries={FilterByContinent('Asia', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+              <CountryGroup
+                heading={'Africa'}
+                countries={FilterByContinent('Africa', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+              <CountryGroup
+                heading={'Oceania'}
+                countries={FilterByContinent('Oceania', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
