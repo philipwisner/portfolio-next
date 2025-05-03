@@ -2,8 +2,8 @@
 import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import countries from '@/data/countries';
-import Script from 'next/script';
 import CountryGroup, { CountryType } from '@/components/CountryGroup';
+import Map from '@/components/Map';
 import { FilterByContinent } from '@/utils/utils';
 
 // export const metadata: Metadata = {
@@ -337,19 +337,7 @@ export default function Travel() {
   return (
     <div className="container">
       <Header name="Travel" />
-      <Script
-        src="https://www.amcharts.com/lib/3/ammap.js"
-        type="text/javascript"
-      />
-      <Script
-        src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js"
-        type="text/javascript"
-      />
-      <Script
-        src="https://www.amcharts.com/lib/3/themes/dark.js"
-        type="text/javascript"
-      />
-      <div id="mapdiv" className="w-full h-[450px]"></div>
+      <Map />
       <p className="text-center mt-8 font-regular text-gray-900 text-3xl mb-1">
         Visited{' '}
         <span className="font-bold text-cobalt-800">
