@@ -28,20 +28,11 @@ function Map() {
       })
     );
 
-    // let countryData = am5geodata_worldLow?.features?.map((country) => {
-    //   if (country.polygonSettings) {
-    //     country.polygonSettings = {
-    //       fill: am5.color(0xff3c38),
-    //     };
-    //   }
-    //   return country;
-    // });
-    // console.log('am5geodata_worldLow', am5geodata_worldLow);
-
     let polygonSeries = chart.series.push(
       am5map.MapPolygonSeries.new(root, {
         geoJSON: am5geodata_worldLow,
         fill: am5.color(0xdadada),
+        stroke: am5.color(0xffffff),
         exclude: ['AQ'],
       })
     );

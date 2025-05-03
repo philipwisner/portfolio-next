@@ -1652,7 +1652,7 @@ const countries: CountryType[] = [
   {
     continent: 'Europe',
     name: 'United Kingdom',
-    id: 'UK',
+    id: 'GB',
     visited: true,
     emoji: '🇬🇧',
   },
