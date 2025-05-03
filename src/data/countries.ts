@@ -25,7 +25,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'American Samoa',
+    name: 'American Samoa (US)',
     id: 'AS',
     visited: false,
     emoji: '🇦🇸',
@@ -190,7 +190,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Bonaire',
+    name: 'Bonaire (NL)',
     id: 'BQ',
     visited: true,
     emoji: '🇧🇶',
@@ -227,7 +227,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Africa',
-    name: 'British Indian Ocean Territory',
+    name: 'British Indian Ocean Territory (UK)',
     id: 'IO',
     visited: false,
     emoji: '🇮🇴',
@@ -330,7 +330,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'Christmas Island',
+    name: 'Christmas Island (AU)',
     id: 'CX',
     visited: false,
     emoji: '🇨🇽',
@@ -338,7 +338,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'Cocos (Keeling) Islands',
+    name: 'Cocos (Keeling) Islands (AU)',
     id: 'CC',
     visited: false,
     emoji: '🇨🇨',
@@ -367,7 +367,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'Cook Islands',
+    name: 'Cook Islands (NZ)',
     id: 'CK',
     visited: false,
     emoji: '🇨🇰',
@@ -397,7 +397,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Curaçao',
+    name: 'Curaçao (NL)',
     id: 'CW',
     visited: true,
     emoji: '🇨🇼',
@@ -503,7 +503,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'South America',
-    name: 'Falkland Islands',
+    name: 'Falkland Islands (UK)',
     id: 'FK',
     visited: false,
     emoji: '🇫🇰',
@@ -540,7 +540,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'South America',
-    name: 'French Guiana',
+    name: 'French Guiana (FR)',
     id: 'GF',
     visited: false,
     emoji: '🇬🇫',
@@ -548,7 +548,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'French Polynesia',
+    name: 'French Polynesia (FR)',
     id: 'PF',
     visited: false,
     emoji: '🇵🇫',
@@ -591,7 +591,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Europe',
-    name: 'Gibraltar',
+    name: 'Gibraltar (UK)',
     id: 'GI',
     visited: true,
     emoji: '🇬🇮',
@@ -629,7 +629,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'Guam',
+    name: 'Guam (US)',
     id: 'GU',
     visited: false,
     emoji: '🇬🇺',
@@ -695,7 +695,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Asia',
-    name: 'Hong Kong',
+    name: 'Hong Kong (CN)',
     id: 'HK',
     visited: false,
     emoji: '🇭🇰',
@@ -912,7 +912,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Asia',
-    name: 'Macao',
+    name: 'Macao (CN)',
     id: 'MO',
     visited: false,
     emoji: '🇭🇰',
@@ -998,7 +998,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Africa',
-    name: 'Mayotte',
+    name: 'Mayotte (FR)s',
     id: 'YT',
     visited: false,
     emoji: '🇾🇹',
@@ -1105,7 +1105,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'New Caledonia',
+    name: 'New Caledonia (FR)',
     id: 'NC',
     visited: false,
     emoji: '🇳🇨',
@@ -1142,7 +1142,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'Niue',
+    name: 'Niue (NZ)',
     id: 'NU',
     visited: false,
     emoji: '🇳🇺',
@@ -1150,7 +1150,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'Norfolk Island',
+    name: 'Norfolk Island (AU)',
     id: 'NF',
     visited: false,
     emoji: '🇳🇫',
@@ -1166,7 +1166,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'Northern Mariana Islands',
+    name: 'Northern Mariana Islands (US)',
     id: 'MP',
     visited: false,
     emoji: '🇲🇵',
@@ -1259,7 +1259,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Puerto Rico',
+    name: 'Puerto Rico (US)',
     id: 'PR',
     visited: true,
     emoji: '🇵🇷',
@@ -1274,7 +1274,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Africa',
-    name: 'Réunion',
+    name: 'Réunion (FR)',
     id: 'RE',
     visited: false,
     emoji: '🇷🇪',
@@ -1304,7 +1304,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Africa',
-    name: 'Saint Helena',
+    name: 'Saint Helena (UK)',
     id: 'SH',
     visited: false,
     emoji: '🇸🇭',
@@ -1571,7 +1571,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'Tokelau',
+    name: 'Tokelau (NZ)',
     id: 'TK',
     visited: false,
     emoji: '🇹🇰',
@@ -1614,7 +1614,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Turks and Caicos Islands',
+    name: 'Turks and Caicos Islands (UK)',
     id: 'TC',
     visited: true,
     emoji: '🇹🇨',
@@ -1717,7 +1717,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Oceania',
-    name: 'Wallis and Futuna',
+    name: 'Wallis and Futuna (FR)',
     id: 'WF',
     visited: false,
     emoji: '🇼🇫',
@@ -1725,7 +1725,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Africa',
-    name: 'Western Sahara',
+    name: 'Western Sahara (MA)',
     id: 'EH',
     visited: false,
     emoji: '🇪🇭',

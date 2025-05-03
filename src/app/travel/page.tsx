@@ -23,7 +23,7 @@ export default function Travel() {
   const visitedTerritories: CountryType[] = territories.filter(
     (c) => c.visited
   );
-  const [showTerritories, setShowTerritories] = useState(false);
+  const [showTerritories, setShowTerritories] = useState(true);
   const [showAllCountries, setShowAllCountries] = useState(false);
 
   useEffect(() => {
@@ -357,7 +357,8 @@ export default function Travel() {
         </span>{' '}
         {showAllCountries && (
           <span>
-            out of <span className="font-bold">{countriesOnly?.length}</span>{' '}
+            out of{' '}
+            <span className="font-bold">{countriesOnly?.length}</span>{' '}
           </span>
         )}
         Countries
