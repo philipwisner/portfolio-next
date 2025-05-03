@@ -47,7 +47,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'North America',
-    name: 'Anguilla',
+    name: 'Anguilla (UK)',
     id: 'AI',
     visited: false,
     emoji: '🇦🇮',
@@ -511,7 +511,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Europe',
-    name: 'Faroe Islands',
+    name: 'Faroe Islands (DK)',
     id: 'FO',
     visited: false,
     emoji: '🇫🇴',
@@ -644,7 +644,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Europe',
-    name: 'Guernsey',
+    name: 'Guernsey (UK)',
     id: 'GG',
     visited: false,
     emoji: '🇬🇬',
@@ -753,7 +753,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Europe',
-    name: 'Isle of Man',
+    name: 'Isle of Man (UK)',
     id: 'IM',
     visited: false,
     emoji: '🇮🇲',
@@ -797,7 +797,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Europe',
-    name: 'Jersey',
+    name: 'Jersey (UK)',
     id: 'JE',
     visited: false,
     emoji: '🇯🇪',
@@ -1484,7 +1484,7 @@ const countries: CountryType[] = [
   },
   {
     continent: 'Europe',
-    name: 'Svalbard and Jan Mayen',
+    name: 'Svalbard and Jan Mayen (NO)',
     id: 'SJ',
     visited: false,
     emoji: '🇸🇯',
