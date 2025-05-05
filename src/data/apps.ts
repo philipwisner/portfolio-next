@@ -34,7 +34,7 @@ const apps: AppType[] = [
       'This is a simple app built in React that will custom created  surveys that allow financial advisors to gather whatever information they need from their clients. That data can then be mapped to a PDF or visible in Asset-Map.',
     link: 'https://vimeo.com/936032813',
     tagline: `“Make info gathering from your clients fun.”`,
-    categories: [],
+    categories: ['portfolio'],
     buttons: [
       { text: 'Walkthrough', link: 'https://vimeo.com/936032813' },
       {
@@ -56,13 +56,23 @@ const apps: AppType[] = [
     tagline: `“Make info gathering from your clients fun.”`,
     link: 'http://prakash.ai',
     categories: ['portfolio'],
+    buttons: [
+      {
+        text: 'GitHub',
+        link: 'https://github.com/philipwisner/machine-learning-lab',
+      },
+      {
+        text: 'Wireframe',
+        link: 'https://www.behance.net/gallery/91763401/MLab',
+      },
+    ],
   },
   {
     name: 'Streamy',
     value: 'streamy',
     image: '/logos/Streamy.svg',
     logo: '/logos/streamy-horizontal.svg',
-    screenshot: '/logos/streamy-horizontal.svg',
+    screenshot: '/screenshots/Streamy-Screenshot.png',
     details:
       ' Streamy is a demo streaming service app made similar to Spotify. Frontend was done using Vue.',
     description:
@@ -70,13 +80,24 @@ const apps: AppType[] = [
     tagline: 'Streamy is a simple streaming media player.',
     link: 'https://philipwisner.github.io/streamy/#/library',
     categories: ['portfolio'],
+    buttons: [
+      {
+        text: 'See it Live',
+        link: 'https://philipwisner.github.io/streamy/#/library',
+      },
+      { text: 'GitHub', link: 'https://github.com/philipwisner/streamy' },
+      {
+        text: 'Wireframe',
+        link: 'https://www.behance.net/gallery/91755021/Streamy',
+      },
+    ],
   },
   {
     name: 'Todos',
     value: 'todos',
     image: '/logos/Todos.svg',
     logo: '/logos/Todos.svg',
-    screenshot: '/logos/Todos.svg',
+    screenshot: '/screenshots/diti-screenshot.png',
     description: 'A minimalist Todo App built for mobile.',
     link: '',
     categories: ['portfolio'],
@@ -86,7 +107,7 @@ const apps: AppType[] = [
     value: 'encompass',
     image: '/logos/encompass.svg',
     logo: '/logos/encompass.svg',
-    screenshot: '/logos/encompass.svg',
+    screenshot: '/screenshots/encompass.svg',
     description:
       'Encompass is a web application designed to facilitate the process of learning.',
     link: 'https://encompass.mathematicalthinking.org/',
@@ -97,7 +118,7 @@ const apps: AppType[] = [
     value: 'Minimo',
     image: '/logos/Minimo.svg',
     logo: '/logos/Minimo.svg',
-    screenshot: '/logos/Minimo.svg',
+    screenshot: '/screenshots/Minimo.svg',
     description: 'A minimalist blogging and thought capturing platform.',
     link: 'https://minimo.herokuapp.com/home',
     categories: ['portfolio'],
@@ -107,7 +128,7 @@ const apps: AppType[] = [
     value: 'farmvoyage',
     image: '/logos/farm voyage.svg',
     logo: '/logos/farm voyage.svg',
-    screenshot: '/logos/farm voyage.svg',
+    screenshot: '/screenshots/farm voyage.svg',
     description:
       'Find local farms, vineyards, eco-lodges before you plan your next road trip.',
     link: 'https://farm-voyage.herokuapp.com/',
@@ -118,7 +139,7 @@ const apps: AppType[] = [
     value: 'dragquiz',
     image: '/logos/dragquiz.svg',
     logo: '/logos/dragquiz.svg',
-    screenshot: '/logos/dragquiz.svg',
+    screenshot: '/screenshots/dragquiz.svg',
     description:
       'An online quiz game that tests your knowledge of all things drag queens.',
     link: 'https://philipwisner.github.io/Drag-Quiz/#',
@@ -129,7 +150,7 @@ const apps: AppType[] = [
     value: 'diti',
     image: '/logos/Diti.svg',
     logo: '/logos/Diti.svg',
-    screenshot: '/logos/Diti.svg',
+    screenshot: '/screenshots/Diti.svg',
     description: 'A Simple VanillaJS To Do App built from scratch.',
     link: 'https://philipwisner.github.io/Diti',
     categories: ['portfolio'],
