@@ -832,6 +832,13 @@ const countries: CountryType[] = [
     emoji: '🇰🇮',
   },
   {
+    continent: 'Europe',
+    name: 'Kosovo',
+    id: 'XK',
+    visited: true,
+    emoji: '🇽🇰',
+  },
+  {
     continent: 'Asia',
     name: 'Kuwait',
     id: 'KW',
