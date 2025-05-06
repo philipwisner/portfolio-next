@@ -446,13 +446,6 @@ const countries: CountryType[] = [
     emoji: '🇩🇴',
   },
   {
-    continent: 'Asia',
-    name: 'Timor-Leste',
-    id: 'TP',
-    visited: false,
-    emoji: '🇹🇱',
-  },
-  {
     continent: 'South America',
     name: 'Ecuador',
     id: 'EC',
