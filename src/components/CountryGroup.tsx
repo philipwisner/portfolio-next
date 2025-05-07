@@ -63,6 +63,7 @@ function CountryGroup({
               >
                 <span className="mr-2">{country.emoji}</span>
                 {country.name}
+                {country.territory && '*'}
               </li>
             );
           })

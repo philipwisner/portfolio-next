@@ -374,7 +374,7 @@ export default function Travel() {
             htmlFor="territories-checkbox"
             className="ms-2 text-sm font-medium text-gray-600"
           >
-            Include Territories
+            Include Territories*
           </label>
         </div>
         <div className="flex items-center">
