@@ -144,6 +144,7 @@ const countries: CountryType[] = [
     id: 'BY',
     visited: false,
     emoji: '🇧🇾',
+    unsafe: true,
   },
   {
     continent: 'Europe',
