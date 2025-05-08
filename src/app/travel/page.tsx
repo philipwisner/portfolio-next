@@ -419,6 +419,12 @@ export default function Travel() {
                 showingAll={showAllCountries}
                 showTerritories={showTerritories}
               />
+              <CountryGroup
+                heading={'Antarctica'}
+                countries={FilterByContinent('Antarctica', countries)}
+                showingAll={showAllCountries}
+                showTerritories={showTerritories}
+              />
             </div>
             <div className="break-inside-avoid">
               <CountryGroup
@@ -436,12 +442,6 @@ export default function Travel() {
                 showTerritories={showTerritories}
               />
             </div>
-            <CountryGroup
-              heading={'Antarctica'}
-              countries={FilterByContinent('Antarctica', countries)}
-              showingAll={showAllCountries}
-              showTerritories={showTerritories}
-            />
             <div className="break-inside-avoid">
               <CountryGroup
                 heading={'Africa'}
