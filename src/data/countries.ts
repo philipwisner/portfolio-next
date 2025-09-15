@@ -35,7 +35,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'Andorra',
     id: 'AD',
-    visited: false,
+    visited: true,
     emoji: '🇦🇩',
   },
   {
@@ -894,7 +894,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'Liechtenstein',
     id: 'LI',
-    visited: false,
+    visited: true,
     emoji: '🇱🇮',
   },
   {
@@ -1030,7 +1030,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'Monaco',
     id: 'MC',
-    visited: false,
+    visited: true,
     emoji: '🇲🇨',
   },
   {
@@ -1509,7 +1509,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'Switzerland',
     id: 'CH',
-    visited: false,
+    visited: true,
     emoji: '🇨🇭',
   },
   {
