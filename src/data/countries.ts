@@ -965,7 +965,7 @@ const countries: CountryType[] = [
     continent: 'Europe',
     name: 'Malta',
     id: 'MT',
-    visited: false,
+    visited: true,
     emoji: '🇲🇹',
   },
   {
