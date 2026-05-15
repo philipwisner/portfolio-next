@@ -117,7 +117,7 @@ const apps: AppType[] = [
     name: 'Minimo',
     value: 'Minimo',
     image: '/logos/Minimo.svg',
-    logo: '/logos/minimo.svg',
+    logo: '/logos/Minimo.svg',
     screenshot: '/screenshots/minimo.svg',
     description: 'A minimalist blogging and thought capturing platform.',
     link: 'https://minimo.herokuapp.com/home',
