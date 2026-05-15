@@ -103,7 +103,7 @@ const skills: SkillsType = {
       name: 'Firebase',
       image: '/icons/firebase.svg',
     },
-    { value: 'azure', name: 'Azure', image: '/icons/Azure.svg' },
+    { value: 'azure', name: 'Azure', image: '/icons/azure.svg' },
     { value: 'heroku', name: 'Heroku', image: '/icons/heroku.png' },
     {
       value: 'wordpress',
