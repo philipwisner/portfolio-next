@@ -116,7 +116,7 @@ const apps: AppType[] = [
   {
     name: 'Minimo',
     value: 'Minimo',
-    image: '/logos/Minimo.svg',
+    image: '/logos/minimo.svg',
     logo: '/logos/minimo.svg',
     screenshot: '/screenshots/minimo.svg',
     description: 'A minimalist blogging and thought capturing platform.',
