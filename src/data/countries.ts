@@ -779,7 +779,7 @@ const countries: CountryType[] = [
     continent: 'North America',
     name: 'Jamaica',
     id: 'JM',
-    visited: false,
+    visited: true,
     emoji: '🇯🇲',
   },
   {
